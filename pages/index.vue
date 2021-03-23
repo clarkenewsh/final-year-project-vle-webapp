@@ -1,28 +1,8 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">final-year-project-vle-webapp</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
+  <h1>
+    Home page - will be login one firebase installed with modal with student
+    login and staff login
+  </h1>
 </template>
 
 <script>
