@@ -31,4 +31,3 @@ describe('The Services Page', () => {
     cy.screenshot()
   })
 })
-
