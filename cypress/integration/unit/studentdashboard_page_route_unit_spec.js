@@ -1,33 +1,31 @@
 /* eslint-disable no-undef */
-//  Cypress test case structure:
-// Visit a web page.
-// Query for an element.
-// Interact with that element.
-// Assert about the content on the page.
+// Testing the Student Dashboard home page route - TDD unit
 
-// Testing the services page route and title - TDD unit
+// // TDD Test Case Logic:
+//    1. visit student dashbaord page route url
+//    2. url chould include /studentdashboard
+//    3. Query for the head title tag
+//    4. Interact with the head title tag
+//    5. The title should be contain the page title
 
-//    1. visit services page URL
-//    2. url chould include /services uri
-//    2. Query for the head title of the contact page
-//    3. Interact with the head title tag
-//    4. The title should be contain the page title
+describe('The Student Dashbaord Home Page', () => {
+  it('should visit the student dashboard home page and check its route url and head title tag', () => {
+    // Given
+    cy.visit('http://localhost:3000/studentdashboard')
 
-describe('The Services Page', () => {
-  it('should visit the services page and check its url and head title tag', () => {
-    // eslint-disable-next-line no-undef
-    cy.visit('http://localhost:3000/services')
+    // When
+    cy.url().should('include', '/studentdashboard')
 
-    // Should be on a new URL which includes '/'
-    // eslint-disable-next-line no-undef
-    cy.url().should('include', '/services')
-
-    // Page title should be Services Page
-    cy.get('title')
-      // eslint-disable-next-line padded-blocks
-      .should('have.text', 'Services & cost')
+    // Then
+    cy.get('title').should('have.text', 'Student Dashboard Home')
 
     // Save screenshot of test result to screenshots folder
     cy.screenshot()
   })
 })
+
+//  Cypress test case logic reminder
+// Visit a web page.
+// Query for an element.
+// Interact with that element.
+// Assert about the content on the page.
