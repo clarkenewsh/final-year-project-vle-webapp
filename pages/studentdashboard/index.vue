@@ -1,7 +1,7 @@
 <template>
   <section>
-    <h1>Student Dashbaord Home Page</h1>
-    this will contain the lgoin for student dashbaord
+    <h1>Student Dashbaord Login page</h1>
+    <p>Login form to go ghere to redirect to the student dashbaord</p>
   </section>
 </template>
 
@@ -11,7 +11,7 @@ export default {
   layout: 'blog',
   data() {
     return {
-      title: 'Student Dashboard',
+      title: 'Student Login',
     }
   },
   head() {

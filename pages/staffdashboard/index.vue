@@ -1,16 +1,16 @@
 <template>
   <section>
-    <h1>Staff Dashbaord Home Page - this will contain the login for staff</h1>
+    <h1>Staff Dashbaord Login Page</h1>
   </section>
 </template>
 
 <script>
 export default {
   // Assign blog layout to blog home
-  layout: 'blog',
+  layout: 'default',
   data() {
     return {
-      title: 'Staff Dashboard',
+      title: 'Staff Login',
     }
   },
   head() {

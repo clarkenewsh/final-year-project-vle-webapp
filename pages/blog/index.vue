@@ -32,7 +32,7 @@ export default {
   },
   data() {
     return {
-      title: 'Blog',
+      title: 'Blog Home Page',
     }
   },
   head() {

@@ -1,76 +1,70 @@
 <template>
-  <form>
-    <img
-      class="mb-4"
-      src="/docs/5.0/assets/brand/bootstrap-logo.svg"
-      alt=""
-      width="72"
-      height="57"
-    />
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-
-    <div class="form-floating">
-      <input
-        id="floatingInput"
-        type="email"
-        class="form-control"
-        placeholder="name@example.com"
-      />
-      <label for="floatingInput">Email address</label>
+  <div>
+    <div class="card">
+      <div class="card-header">Blog Learning Center</div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <NuxtLink to="/studentdashbaord" class="btn btn-primary">View</NuxtLink>
+      </div>
     </div>
-    <div class="form-floating">
-      <input
-        id="floatingPassword"
-        type="password"
-        class="form-control"
-        placeholder="Password"
-      />
-      <label for="floatingPassword">Password</label>
+    <div class="card">
+      <div class="card-header">Student Project Dashboard</div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <NuxtLink to="/studentdashbaord" class="btn btn-primary">View</NuxtLink>
+      </div>
     </div>
-
-    <div class="checkbox mb-3">
-      <label> <input type="checkbox" value="remember-me" /> Remember me </label>
+    <div class="card">
+      <div class="card-header">Staff Project Dashboard</div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <NuxtLink to="/staffdashbaord" class="btn btn-primary">View</NuxtLink>
+      </div>
     </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
-  </form>
+  </div>
 </template>
 
 <script>
 export default {
-  layout: 'blog',
+  // Assign blog layout to blog home
+  layout: 'default',
+  data() {
+    return {
+      title: 'Home Page',
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+    }
+  },
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
+<style scoped>
+section {
+  grid-column: 2;
+}
+
+.card-block {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  flex-wrap: wrap;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+@media only screen and (min-width: 1024px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
 }
 </style>
