@@ -1,21 +1,24 @@
 <template>
   <div class="grid">
     <header>
-      <!-- <NavBar /> -->
+      <NavBar />
     </header>
     <main>
       <Nuxt />
     </main>
-    <!-- <TheFooter /> -->
+    <TheFooter />
   </div>
 </template>
 
 <script>
-// import NavBar from '~/components/NavBar.vue'
-// import TheFooter from '~/components/TheFooter.vue'
+import NavBar from '~/components/NavBar.vue'
+import TheFooter from '~/components/TheFooter.vue'
 
 export default {
-  components: {},
+  components: {
+    NavBar,
+    TheFooter,
+  },
 }
 </script>
 
@@ -30,7 +33,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  color: #77838f;
+  color: #a2e8f0;
 }
 
 *,
@@ -39,9 +42,15 @@ html {
   box-sizing: border-box;
   margin: 0;
   line-height: 1.6;
+  animation: 0.2s appear;
+  background: #1a202c;
+  color: #e2e8f0;
 }
 
-body {
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
 }
 
 /* Mobile first css grid styles */
@@ -54,25 +63,32 @@ body {
 }
 
 main {
-  /* min-height: 100vh; */
   grid-column: 2;
-  padding: 60px 0px;
+  padding: 0px;
+  min-height: 100vh;
 }
 
 header,
-main,
 footer {
-  grid-column: 2;
+  grid-column: 1/-1;
 }
 
-/*
-put all heading variations and heading scaling here  */
 h1 {
   font-weight: 700;
-  color: #58a8a4;
+  font-size: 3.1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
 }
 
 h2 {
+  font-weight: 700;
+  font-size: 2.1rem;
+  letter-spacing: 1.5px;
+  word-spacing: 2.5px;
 }
 
 @media only screen and (min-width: 768px) {

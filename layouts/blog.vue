@@ -6,17 +6,18 @@
     <main>
       <Nuxt />
     </main>
-    <!-- <TheFooter /> -->
+    <TheFooter />
   </div>
 </template>
 
 <script>
 import BlogNav from '~/components/BlogNav.vue'
-// import TheFooter from '~/components/TheFooter.vue'
+import TheFooter from '~/components/TheFooter.vue'
 
 export default {
   components: {
     BlogNav,
+    TheFooter,
   },
 }
 </script>
@@ -41,9 +42,13 @@ html {
   box-sizing: border-box;
   margin: 0;
   line-height: 1.6;
+  animation: 0.2s appear;
 }
 
-body {
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
 }
 
 /* Mobile first css grid styles */
@@ -56,25 +61,34 @@ body {
 }
 
 main {
-  /* min-height: 100vh; */
   grid-column: 2;
-  padding: 60px 0px;
+  padding: 0px;
+  min-height: 100vh;
 }
 
 header,
-main,
 footer {
-  grid-column: 2;
+  grid-column: 1/-1;
+  margin: 10px 20px;
 }
 
-/*
-put all heading variations and heading scaling here  */
 h1 {
   font-weight: 700;
-  color: #58a8a4;
+  font-size: 3.1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
 }
 
 h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.1rem;
+  letter-spacing: 1.5px;
+  word-spacing: 2.5px;
 }
 
 @media only screen and (min-width: 768px) {
