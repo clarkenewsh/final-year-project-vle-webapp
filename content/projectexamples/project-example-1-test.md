@@ -1,12 +1,12 @@
 ---
-title: My first blog post
-description: Learning how to use @nuxt/content to create a blog
-img: first-blog-post.jpg
-alt: my first blog post
+title: Project example 1 
+description: Testing projectexample1
+img: availableproject-1.jpg
+alt: Project example 1 
 ---
 
 ## This is a heading
-Welcome to my first blog post
+Welcome to my first Project example 1 
 
 This is some more info
 
