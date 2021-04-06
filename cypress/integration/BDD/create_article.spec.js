@@ -50,24 +50,26 @@
 // Grab the browser URL, ensure it includes /posts/my-first-post.
 // Find the h1 tag, ensure it contains the text "My First Post".
 
-
 // describe('Post Resource', () => {
 //     it('Creating a New Post', () => {
 //       cy.visit('/posts/new') // 1.
-  
+
 //       cy.get('input.post-title') // 2.
 //         .type('My First Post') // 3.
-  
+
 //       cy.get('input.post-body') // 4.
 //         .type('Hello, world!') // 5.
-  
+
 //       cy.contains('Submit') // 6.
 //         .click() // 7.
-  
+
 //       cy.url() // 8.
 //         .should('include', '/posts/my-first-post')
-  
+
 //       cy.get('h1') // 9.
 //         .should('contain', 'My First Post')
 //     })
 //   })
+
+// for the create ones I could insert the data in to the api for the headless cms with nuxt content and then check the api for the newly added data by using the json parser web view
+// I could use th eurl provided to see the json data and then chekc the details from there. This would be classed as a functional test on its own and then acceptance ui for the data ont the ui
