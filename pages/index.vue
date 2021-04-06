@@ -3,31 +3,32 @@
     <div class="card">
       <div class="card-header">Blog Learning Center</div>
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
+        <h5 class="card-title">Blog Learning Resources</h5>
         <p class="card-text">
-          With supporting text below as a natural lead-in to additional content.
+          A collection of blog articles covering all things undergraduate
+          projects
         </p>
-        <NuxtLink to="/studentdashbaord" class="btn btn-primary">View</NuxtLink>
+        <NuxtLink to="/blog" class="btn btn-primary">View</NuxtLink>
       </div>
     </div>
     <div class="card">
       <div class="card-header">Student Project Dashboard</div>
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
+        <h5 class="card-title">Student dashboard</h5>
         <p class="card-text">
           With supporting text below as a natural lead-in to additional content.
         </p>
-        <NuxtLink to="/studentdashbaord" class="btn btn-primary">View</NuxtLink>
+        <NuxtLink to="/studentdashboard" class="btn btn-primary">View</NuxtLink>
       </div>
     </div>
     <div class="card">
       <div class="card-header">Staff Project Dashboard</div>
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
+        <h5 class="card-title">Staff dashboard</h5>
         <p class="card-text">
           With supporting text below as a natural lead-in to additional content.
         </p>
-        <NuxtLink to="/staffdashbaord" class="btn btn-primary">View</NuxtLink>
+        <NuxtLink to="/staffdashboard/" class="btn btn-primary">View</NuxtLink>
       </div>
     </div>
   </div>
@@ -51,20 +52,30 @@ export default {
 </script>
 
 <style scoped>
-section {
+div:first-of-type {
   grid-column: 2;
-}
-
-.card-block {
   display: flex;
-  flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 1024px) {
+.card {
+  margin: 15px;
+  border: 1px solid #2d3748;
+}
+
+.card-header {
+  background: #2d3748;
+}
+
+@media only screen and (max-width: 1024px) {
   section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+  }
+
+  div:first-of-type {
+    grid-column: 2;
+    flex-direction: column;
   }
 }
 </style>

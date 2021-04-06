@@ -1,13 +1,40 @@
 <template>
   <section>
-    <h1>Student Dashbaord Home Page</h1>
+    <h1>Project examples</h1>
+    <ul>
+      <li v-for="projectexample of projectexamples" :key="projectexample.slug">
+        <NuxtLink
+          :to="{
+            name: 'studentdashboard-slug',
+            params: { slug: projectexample.slug },
+          }"
+        >
+          <img :src="projectexample.img" />
+          <div>
+            <h2>{{ projectexample.title }}</h2>
+            <!-- <p>by {{ article.author.name }}</p> -->
+            <p>{{ projectexample.description }}</p>
+          </div>
+        </NuxtLink>
+      </li>
+    </ul>
   </section>
 </template>
 
 <script>
 export default {
   // Assign blog layout to blog home
-  layout: 'blog',
+  layout: 'default',
+  async asyncData({ $content, params }) {
+    const projectexamples = await $content('projectexamples')
+      .only(['title', 'description', 'img', 'slug', 'author'])
+      .sortBy('createdAt', 'asc')
+      .fetch()
+
+    return {
+      projectexamples,
+    }
+  },
   data() {
     return {
       title: 'Student Dashboard',

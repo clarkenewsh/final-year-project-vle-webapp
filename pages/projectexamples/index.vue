@@ -1,22 +1,19 @@
 <template>
   <section>
-    <h1>Available Projects</h1>
+    <h1>Project examples</h1>
     <ul>
-      <li
-        v-for="availableproject of availableprojects"
-        :key="availableproject.slug"
-      >
+      <li v-for="projectexample of projectexamples" :key="projectexample.slug">
         <NuxtLink
           :to="{
-            name: 'staffdashboard-slug',
-            params: { slug: availableproject.slug },
+            name: 'projectexamples-slug',
+            params: { slug: projectexample.slug },
           }"
         >
-          <img :src="availableproject.img" />
+          <img :src="projectexample.img" />
           <div>
-            <h2>{{ availableproject.title }}</h2>
+            <h2>{{ projectexample.title }}</h2>
             <!-- <p>by {{ article.author.name }}</p> -->
-            <p>{{ availableproject.description }}</p>
+            <p>{{ projectexample.description }}</p>
           </div>
         </NuxtLink>
       </li>
@@ -26,21 +23,21 @@
 
 <script>
 export default {
-  // Assign default layout to staff dashboard home
+  // Assign blog layout to blog home
   layout: 'default',
   async asyncData({ $content, params }) {
-    const availableprojects = await $content('availableprojects')
+    const projectexamples = await $content('projectexamples')
       .only(['title', 'description', 'img', 'slug', 'author'])
       .sortBy('createdAt', 'asc')
       .fetch()
 
     return {
-      availableprojects,
+      projectexamples,
     }
   },
   data() {
     return {
-      title: 'Staff Dashboard',
+      title: 'Project examples',
     }
   },
   head() {

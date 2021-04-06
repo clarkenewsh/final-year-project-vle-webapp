@@ -8,7 +8,7 @@
       >
         <NuxtLink
           :to="{
-            name: 'staffdashboard-slug',
+            name: 'availableprojects-slug',
             params: { slug: availableproject.slug },
           }"
         >
@@ -40,7 +40,7 @@ export default {
   },
   data() {
     return {
-      title: 'Staff Dashboard',
+      title: 'Available Projects',
     }
   },
   head() {

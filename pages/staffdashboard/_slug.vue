@@ -1,22 +1,27 @@
 <template>
   <article>
-    <h1 class="article-title">{{ article.title }}</h1>
-    <p class="article-description">{{ article.description }}</p>
-    <img :src="article.img" :alt="article.alt" />
-    <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
-    <!-- render the body copy blog content -->
-    <nuxt-content :document="article" class="article-body" />
+    <h1 class="available-project-title">{{ availableproject.title }}</h1>
+    <p class="available-project-description">
+      {{ availableproject.description }}
+    </p>
+    <img :src="availableproject.img" :alt="availableproject.alt" />
+    <p>Project last updated: {{ formatDate(availableproject.updatedAt) }}</p>
+
+    <nuxt-content :document="availableproject" />
   </article>
 </template>
 
 <script>
 export default {
   // Assign blog layout to blog home page
-  layout: 'blog',
+  layout: 'default',
   async asyncData({ $content, params }) {
-    const article = await $content('articles', params.slug).fetch()
+    const availableproject = await $content(
+      'availableprojects',
+      params.slug
+    ).fetch()
 
-    return { article }
+    return { availableproject }
   },
 
   methods: {
