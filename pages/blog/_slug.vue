@@ -1,8 +1,11 @@
 <template>
   <article>
-    <h1 class="article-title">{{ article.title }}</h1>
-    <p class="article-description">{{ article.description }}</p>
+    <div class="article-header">
+      <h1 class="article-title">{{ article.title }}</h1>
+      <p class="article-description">{{ article.description }}</p>
+    </div>
     <img :src="article.img" :alt="article.alt" />
+    <p class="author">Author: {{ article.author }}</p>
     <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
     <!-- render the body copy blog content -->
     <nuxt-content :document="article" class="article-body" />
@@ -30,7 +33,11 @@ export default {
 </script>
 
 <style>
-.nuxt-content h2 {
+.article-header {
+  border: 5px solid #bdcc94;
+  border-radius: 10px;
+}
+/* .nuxt-content h2 {
   font-weight: bold;
   font-size: 28px;
 }
@@ -40,5 +47,5 @@ export default {
 }
 .nuxt-content p {
   margin-bottom: 20px;
-}
+} */
 </style>

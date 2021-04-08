@@ -12,7 +12,7 @@
           <img :src="projectexample.img" />
           <div>
             <h2>{{ projectexample.title }}</h2>
-            <!-- <p>by {{ article.author.name }}</p> -->
+            <!-- <p>Author: {{ artice.author }}</p> -->
             <p>{{ projectexample.description }}</p>
           </div>
         </NuxtLink>

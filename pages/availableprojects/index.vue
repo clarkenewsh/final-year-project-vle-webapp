@@ -15,7 +15,7 @@
           <img :src="availableproject.img" />
           <div>
             <h2>{{ availableproject.title }}</h2>
-            <!-- <p>by {{ article.author.name }}</p> -->
+            <p>Author: {{ article.author }}</p>
             <p>{{ availableproject.description }}</p>
           </div>
         </NuxtLink>
