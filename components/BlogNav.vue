@@ -53,23 +53,19 @@ nav {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  border-radius: 20px;
-  box-shadow: 0 6px 10px rgb(0 0 0 / 8%);
-  font-size: 110%;
   padding: 25px 15px;
-  margin: 10px;
-  background: #2d3748;
+  border-bottom: 1px solid #2d3748;
 }
 
 nav a {
   padding-right: 25px;
-  display: block;
   color: #e2e8f0;
 }
 
 svg {
   margin: 10px;
   background: none;
+  fill: #bdcc94;
 }
 
 @media only screen and (max-width: 1024px) {

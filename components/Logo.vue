@@ -13,6 +13,7 @@ export default {
   animation: 1s appear;
   margin-right: auto;
   font-weight: 700;
+  text-decoration: none;
 }
 
 @keyframes appear {
