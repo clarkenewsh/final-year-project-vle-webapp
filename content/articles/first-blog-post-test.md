@@ -1,8 +1,9 @@
 ---
 title: My first blog post
-description: Learning how to use @nuxt/content to create a blog
-img: first-blog-post.jpg
+description: Learning how to use @nuxt/content to create a blog test
+img: blog-1.jpeg
 alt: my first blog post
+author: Administrator
 ---
 
 ## This is a heading
@@ -18,7 +19,6 @@ This is some more infohkbjhbn
 
 This is some more info
 
-## This is another heading
+### Sub heading
 
-This is some more info
 

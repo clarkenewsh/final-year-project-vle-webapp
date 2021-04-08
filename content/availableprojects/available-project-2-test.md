@@ -3,6 +3,7 @@ title: Available project 2
 description: Testing availableproject 2
 img: availableproject-2.jpg
 alt: Available project 2 
+author: Project Supervisor
 ---
 
 ## This is a heading

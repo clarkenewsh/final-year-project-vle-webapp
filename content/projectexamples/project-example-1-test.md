@@ -3,6 +3,7 @@ title: Project example 1
 description: Testing projectexample1
 img: availableproject-1.jpg
 alt: Project example 1 
+author: Tutor
 ---
 
 ## This is a heading
