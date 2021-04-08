@@ -74,7 +74,7 @@ footer {
 
 h1 {
   font-weight: 700;
-  font-size: 3.1rem;
+  font-size: 3.8rem;
 }
 
 h1,
@@ -84,9 +84,8 @@ h4 {
 }
 
 h2 {
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 2.1rem;
+  font-weight: 500;
+  font-size: 9.4rem;
   letter-spacing: 1.5px;
   word-spacing: 2.5px;
 }
@@ -103,7 +102,7 @@ h2 {
 
   h2 {
     font-size: 180%;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
@@ -114,6 +113,7 @@ h2 {
   .grid {
     grid-template-columns: 5% 1fr 5%;
   }
+
   h2 {
     font-size: 200%;
   }

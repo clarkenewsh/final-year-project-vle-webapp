@@ -85,7 +85,7 @@ h4 {
 }
 
 h2 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 2.1rem;
   letter-spacing: 1.5px;
   word-spacing: 2.5px;
