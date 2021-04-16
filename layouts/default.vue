@@ -43,7 +43,6 @@ html {
   margin: 0;
   line-height: 1.6;
   animation: 0.2s appear;
-  background: #1a202c;
   color: #e2e8f0;
 }
 
@@ -65,7 +64,7 @@ html {
 main {
   grid-column: 2;
   padding: 0px;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 header,
@@ -86,9 +85,7 @@ h4 {
 
 h2 {
   font-weight: 500;
-  font-size: 2.1rem;
-  letter-spacing: 1.5px;
-  word-spacing: 2.5px;
+  font-size: 1.8rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -115,7 +112,7 @@ h2 {
     grid-template-columns: 5% 1fr 5%;
   }
   h2 {
-    font-size: 200%;
+    font-size: 170%;
   }
 }
 

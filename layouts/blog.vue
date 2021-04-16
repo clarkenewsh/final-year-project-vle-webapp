@@ -51,6 +51,10 @@ html {
   }
 }
 
+body {
+  background: #1a202c;
+}
+
 /* Mobile first css grid styles */
 .grid {
   display: grid;
@@ -63,7 +67,7 @@ html {
 main {
   grid-column: 2;
   padding: 0px;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 header,
@@ -86,8 +90,6 @@ h4 {
 h2 {
   font-weight: 500;
   font-size: 9.4rem;
-  letter-spacing: 1.5px;
-  word-spacing: 2.5px;
 }
 
 @media only screen and (min-width: 768px) {
