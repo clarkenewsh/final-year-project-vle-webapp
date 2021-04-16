@@ -3,22 +3,32 @@ title: My first blog post
 description: Learning how to use @nuxt/content to create a blog test
 img: blog-1.jpeg
 alt: my first blog post
-author: Administrator
+author: Admin
 ---
 
-## This is a heading
-Welcome to my first blog post
+## Introduction
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
 
-This is some more info
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
+
+    
 ### This is a sub heading
 
-This is some more infohkbjhbn
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
 
-### This is another sub heading
+### Image section here
 
-This is some more info
 
-### Sub heading
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia.
+### Link to external resource and software
 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
 

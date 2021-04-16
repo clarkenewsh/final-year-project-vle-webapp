@@ -3,7 +3,7 @@ title: Methodology & process
 description: Learn how to apply the correct methodoldgy to your Undergraduate project work while following a structuted process. 
 img: first-blog-post.jpg
 alt: Methodology & process post
-author: Administrator
+author: Admin
 ---
 
 ## This is a heading

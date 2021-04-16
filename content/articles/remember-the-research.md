@@ -3,7 +3,7 @@ title: Remember the Research
 description: Learn how to think as a Compouter Scienetist and understabnd that Computer Science undergraduate projects are not all about the build and coding. 
 img: first-blog-post.jpg
 alt: Remember the Research
-author: Administrator
+author: Admin
 ---
 
 ## This is a heading

@@ -3,7 +3,7 @@ title: Tools & Software to help you succeed
 description: Learn how to use external free tools and software that can help you management and conduct your project work. 
 img: first-blog-post.jpg
 alt:  Tools & Software to help you succeed in your Undergraduate Projects
-author: Administrator
+author: Admin
 ---
 
 ## This is a heading

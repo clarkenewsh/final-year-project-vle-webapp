@@ -3,7 +3,7 @@ title: Project Time Management
 description: Learn how to manage your time wisely. Apply project managment techniques to ensure you manage your time
 img: first-blog-post.jpg
 alt: Project Time Management
-author: Administrator
+author: Admin
 ---
 
 ## This is a heading
