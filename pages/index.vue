@@ -49,7 +49,7 @@
             d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"
           />
         </svg>
-        <h5 class="card-title">Student dashboard</h5>
+        <h5 class="card-title">Student Dashboard</h5>
         <p class="card-text">
           With supporting text below as a natural lead-in to additional content.
         </p>
@@ -75,7 +75,7 @@
             d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"
           />
         </svg>
-        <h5 class="card-title">Staff dashboard</h5>
+        <h5 class="card-title">Staff Dashboard</h5>
         <p class="card-text">
           With supporting text below as a natural lead-in to additional content.
         </p>
@@ -110,10 +110,13 @@ div:first-of-type {
 
 .card {
   margin: 15px;
+  background-color: #1a202c;
+  border: 1px solid #2d3748;
 }
 
 .card-header {
   background: #2d3748;
+  font-weight: 500;
 }
 
 svg {

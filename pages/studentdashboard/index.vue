@@ -11,9 +11,6 @@
           aria-describedby="emailHelp"
           placeholder="Enter email"
         />
-        <small id="emailHelp" class="form-text text-muted"
-          >We'll never share your email with anyone else.</small
-        >
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
@@ -24,12 +21,10 @@
           placeholder="Password"
         />
       </div>
-      <div class="form-check">
-        <input id="exampleCheck1" type="checkbox" class="form-check-input" />
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
       <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-      <NuxtLink to="/studentdashboard/dashboard/">Submit</NuxtLink>
+      <NuxtLink to="/studentdashboard/dashboard/" class="btn btn-primary"
+        >Submit</NuxtLink
+      >
     </form>
   </section>
 </template>
@@ -54,13 +49,26 @@ export default {
 <style scoped>
 section {
   grid-column: 2;
+  margin-top: 50px;
+}
+
+.btn {
+  color: white;
+  background: #2d3748;
+  border: none;
+  transition: all 0.2s ease;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(4px);
 }
 
 @media only screen and (min-width: 1024px) {
   section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
   }
 }
 </style>
