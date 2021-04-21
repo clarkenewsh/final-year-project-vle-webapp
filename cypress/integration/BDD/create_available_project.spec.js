@@ -2,6 +2,7 @@
 // Feature: Project Supervisor Create Available Project
 
 // User Story: As a Project Supervisor, I want to create an available project, that can be accessed and viewed by students.
+
 // sneario: Project Supervisor Create available project
 // Given I want to create an available project
 // When I click the view project example button
@@ -14,6 +15,7 @@
 // 0.4 Check the nuxt content url http://localhost:3000/_content/availableprojects and check the first object that the new project slug is visible as a json object (functional test)
 // 1. Visit the page http://localhost:3000/staffdashboard/availableprojects
 // 1.1 I DONT get a 404 error code with text content 'An error occured'
+// 2. Get the
 // 2. Find a project link from the list of available projects
 // 3. Click it
 // 4. Grab the url and ensure it should include /availableprojects/project-title
@@ -41,23 +43,60 @@
 // Interact with that element.
 // Assert about the content on the page.
 
-describe('Post Resource', () => {
-  it('Creating a New Post', () => {
-    cy.visit('/posts/new') // 1.
+describe('Testing API GET, POST Endpoints - Creating a new available project', () => {
+  // Functional Test
+  it('Test POST Request - Creating a new available project', () => {
+    cy.request(
+      'POST',
+      'http://localhost:3000/_content/availableprojects',
+      {}
+    ).then((response) => {
+      expect(response.isOkStatusCode) // 0.1, 0.2, 0.3
+    })
+  })
 
-    cy.get('input.post-title') // 2.
-      .type('My First Post') // 3.
+  // Functional Test
+  it('Test GET Request - Creating a new available project', () => {
+    cy.request('http://localhost:3000/_content/availableprojects').then(
+      (response) => {
+        expect(response.status).to.eq(200) // 0.4 - check 200 status code content/articles api endpoint
+      }
+    )
+  })
 
-    cy.get('input.post-body') // 4.
-      .type('Hello, world!') // 5.
+  it('Should visit the available projects page and check the newly created available project can be accessed and viewed', () => {
+    // Given
+    cy.visit('http://localhost:3000/availableprojects') // 1.
+    cy.get('.error-msg').should('not.exist') // 1.1
 
-    cy.contains('Submit') // 6.
-      .click() // 7.
+    // When
+    cy.get('ul li a:first') // 2.
+      .click() // 3.
 
-    cy.url() // 8.
-      .should('include', '/posts/my-first-post')
+    cy.url().should('include', '/availableprojects/project-bizzare') // 4.
 
-    cy.get('h1') // 9.
-      .should('contain', 'My First Post')
+    cy.get('.error-msg').should('not.exist') // 4.1
+
+    cy.get('.available-project-title').should(
+      'have.class',
+      'available-project-title'
+    ) // 5.
+
+    cy.get('h1').should('contain', 'Project Bizzare') // 6.
+    cy.get('.available-project-description').should(
+      'have.class',
+      'available-project-description'
+    ) // 7.
+    cy.get('p.available-project-description').should(
+      'contain',
+      'Web Design & Development Project'
+    )
+    cy.get('.author').should('have.class', 'author')
+    cy.get('p.author').should('contain', 'Project owner: Dave Walsh')
+    cy.get('.updatedAt').should(
+      'contain',
+      'Project last updated: April 21, 2021'
+    )
+    cy.get('.available-project-body.nuxt-content').should('contain', 'p') // 13, 14
   })
 })

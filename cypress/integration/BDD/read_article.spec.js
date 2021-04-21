@@ -1,7 +1,8 @@
 /* eslint-disable no-undef */
 // Feature: Students Read Blog Articles
 
-// User Story:
+// User Story: As a Student, I want to view and read project examples posted by tutors to learn and understand what is required of a final year project. 
+
 
 // sneario: Student read blog article
 // Given I want to read a blog article
@@ -39,23 +40,51 @@
 // - Integration
 // - Unit
 
-describe('Post Resource', () => {
-  it('Creating a New Post', () => {
-    cy.visit('/posts/new') // 1.
+describe('Testing API Blog Article POST Endpoints - Read a Blog Article', () => {
+  // Functional Test
 
-    cy.get('input.post-title') // 2.
-      .type('My First Post') // 3.
+  // Functional Test
+  it('Test GET Request - Creating a new available project', () => {
+    cy.request('http://localhost:3000/_content/projectexamples').then(
+      (response) => {
+        expect(response.status).to.eq(200) // 0.4 - check 200 status code content/articles api endpoint
+      }
+    )
+  })
 
-    cy.get('input.post-body') // 4.
-      .type('Hello, world!') // 5.
+  it('Should visit the available projects page and check the newly created available project can be accessed and viewed', () => {
+    // Given
+    cy.visit('http://localhost:3000/projectexamples') // 1.
+    cy.get('.error-msg').should('not.exist') // 1.1
 
-    cy.contains('Submit') // 6.
-      .click() // 7.
+    // When
+    cy.get('ul li a:first') // 2.
+      .click() // 3.
 
-    cy.url() // 8.
-      .should('include', '/posts/my-first-post')
+    cy.url().should('include', '/projectexamples/project-example-1-test') // 4.
 
-    cy.get('h1') // 9.
-      .should('contain', 'My First Post')
+    cy.get('.error-msg').should('not.exist') // 4.1
+
+    cy.get('.project-example-title').should(
+      'have.class',
+      'project-example-title'
+    ) // 5.
+
+    cy.get('h1').should('contain', 'Project example 1') // 6.
+    cy.get('.project-example-description').should(
+      'have.class',
+      'project-example-description'
+    ) // 7.
+    cy.get('p.project-example-description').should(
+      'contain',
+      'A test for a project example slug'
+    )
+    cy.get('.author').should('have.class', 'author')
+    cy.get('p.author').should('contain', 'Author: Tutor')
+    cy.get('.updatedAt').should(
+      'contain',
+      'Project last updated: April 17, 2021'
+    )
+    cy.get('.project-example-body.nuxt-content').should('contain', 'p') // 13, 14
   })
 })
