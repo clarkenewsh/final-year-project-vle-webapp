@@ -24,6 +24,12 @@ Dave Walsh
 Email: Walshd@edgehill.ac.uk
 
 ## Project Requiremnets
+All projects below are vague in the description and are guidelines for a discussion
+with the web programme leader. None of these should be attempted without first
+chatting and firming up a direction with him.
+The idea is that you research your ideal job by looking at the current live job specs and assessing
+what they want and what you can currently opffer and then we will try and carve a project from
+one the following topics that will enable you to be ready to apply for jobs like the one you want.
 <div class="text-block">
 1) Project management (whole project)
 </div>
@@ -72,11 +78,11 @@ but objectively (Does the site meet your aim and objectives?)
 </div>
 
 
-## Top Tip
 <div class="text-block border-text-block">
-The build should be much more than you have ever
+TOP TIP: The build should be much more than you have ever
 been asked to do or done in any other module.
 </div>
+
 
 ## Download Project supervisor agreement form 
 This is not part of either assignments but to help you find an project idea and a supervisor. Therefore this not assessed. 
