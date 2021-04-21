@@ -49,14 +49,21 @@ export default {
 <style scoped>
 section {
   grid-column: 2;
-  margin-top: 50px;
+}
+
+form {
+  border: 1px solid #2d3748;
+  border-radius: 0.375rem;
+  padding: 30px;
 }
 
 .btn {
-  color: white;
   background: #2d3748;
   border: none;
   transition: all 0.2s ease;
+}
+
+.btn a {
   color: white;
 }
 
@@ -67,8 +74,9 @@ section {
 @media only screen and (min-width: 1024px) {
   section {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 90px;
+    margin-top: 100px;
   }
 }
 </style>

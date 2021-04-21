@@ -9,7 +9,9 @@
         <span>Project owner:</span> {{ availableproject.author }}
       </p>
       <img :src="availableproject.img" :alt="availableproject.alt" />
-      <p>Project last updated: {{ formatDate(availableproject.updatedAt) }}</p>
+      <p class="updatedAt">
+        Project last updated: {{ formatDate(availableproject.updatedAt) }}
+      </p>
     </div>
     <nuxt-content :document="availableproject" class="available-project-body" />
   </article>
@@ -58,9 +60,11 @@ export default {
 
 .author {
   color: #bdcc94;
-  font-size: 80%;
+  font-size: 90%;
 }
-
+span {
+  font-size: 90%;
+}
 .available-project-body {
   padding: 40px 0px;
 }

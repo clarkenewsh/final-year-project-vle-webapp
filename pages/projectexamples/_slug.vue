@@ -6,8 +6,10 @@
         {{ projectexample.description }}
       </p>
       <img :src="projectexample.img" :alt="projectexample.alt" />
-      <p class="author">Author: {{ projectexample.author }}</p>
-      <p>Project last updated: {{ formatDate(projectexample.updatedAt) }}</p>
+      <p class="author"><span>Author:</span> {{ projectexample.author }}</p>
+      <p class="updatedAt">
+        Project last updated: {{ formatDate(projectexample.updatedAt) }}
+      </p>
     </div>
     <nuxt-content :document="projectexample" class="project-example-body" />
   </article>
@@ -56,7 +58,10 @@ export default {
 
 .author {
   color: #bdcc94;
-  font-size: 80%;
+  font-size: 90%;
+}
+span {
+  font-size: 90%;
 }
 
 .project-example-body {

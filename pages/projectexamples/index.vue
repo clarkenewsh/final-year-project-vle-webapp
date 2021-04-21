@@ -30,7 +30,9 @@
           <div class="project-card">
             <h2>{{ projectexample.title }}</h2>
             <p>{{ projectexample.description }}</p>
-            <p class="author">Author: {{ projectexample.author }}</p>
+            <p class="author">
+              <span>Author:</span> {{ projectexample.author }}
+            </p>
           </div>
         </NuxtLink>
       </li>
@@ -119,7 +121,7 @@ li {
   text-decoration: none;
   border: 1px solid #2d3748;
   border-radius: 0.375rem;
-  padding: 10px 35px;
+  padding: 30px 35px;
 }
 
 li:hover {
@@ -129,7 +131,11 @@ li:hover {
 
 .author {
   color: #bdcc94;
-  font-size: 80%;
+  font-size: 90%;
+}
+
+span {
+  font-size: 90%;
 }
 
 @media only screen and (min-width: 1024px) {

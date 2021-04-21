@@ -21,9 +21,10 @@
           placeholder="Password"
         />
       </div>
-      <button type="submit" class="btn btn-primary">
-        <NuxtLink to="/staffdashboard/dashboard/">Submit</NuxtLink>
-      </button>
+      <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+      <NuxtLink to="/staffdashboard/dashboard/" class="btn btn-primary"
+        >Submit</NuxtLink
+      >
     </form>
   </section>
 </template>
@@ -51,7 +52,9 @@ section {
 }
 
 form {
-  margin: 30px 10px;
+  border: 1px solid #2d3748;
+  border-radius: 0.375rem;
+  padding: 30px;
 }
 
 .btn {
@@ -73,6 +76,8 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    grid-gap: 90px;
+    margin-top: 100px;
   }
 }
 </style>

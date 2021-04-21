@@ -138,9 +138,11 @@ li:hover {
 
 .author {
   color: #bdcc94;
-  font-size: 80%;
+  font-size: 90%;
 }
-
+span {
+  font-size: 90%;
+}
 @media only screen and (min-width: 1024px) {
   ul {
     display: grid;

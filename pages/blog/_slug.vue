@@ -5,7 +5,9 @@
       <p class="article-description">{{ article.description }}</p>
       <img :src="article.img" :alt="article.alt" />
       <p class="author">Author: {{ article.author }}</p>
-      <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
+      <p class="updatedAt">
+        Article last updated: {{ formatDate(article.updatedAt) }}
+      </p>
     </div>
     <!-- render the body copy blog content -->
     <nuxt-content :document="article" class="article-body" />
