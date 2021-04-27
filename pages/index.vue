@@ -35,8 +35,8 @@
       <div class="card-body">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
+          width="16"
+          height="16"
           fill="currentColor"
           class="bi bi-speedometer2"
           viewBox="0 0 16 16"
@@ -51,7 +51,8 @@
         </svg>
         <h5 class="card-title">Student Dashboard</h5>
         <p class="card-text">
-          With supporting text below as a natural lead-in to additional content.
+          Student dashbaord to accees project examples &amp; available projects
+          for th epcoming semester
         </p>
         <NuxtLink to="/studentdashboard" class="btn btn-primary">View</NuxtLink>
       </div>
@@ -61,8 +62,8 @@
       <div class="card-body">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
+          width="16"
+          height="16"
           fill="currentColor"
           class="bi bi-speedometer2"
           viewBox="0 0 16 16"
@@ -77,7 +78,8 @@
         </svg>
         <h5 class="card-title">Staff Dashboard</h5>
         <p class="card-text">
-          With supporting text below as a natural lead-in to additional content.
+          Staff Dasboard to create available projects &amp; upload project
+          examples
         </p>
         <NuxtLink to="/staffdashboard/" class="btn btn-primary">View</NuxtLink>
       </div>
@@ -112,6 +114,7 @@ div:first-of-type {
   margin: 15px;
   background-color: #1a202c;
   border: 1px solid #2d3748;
+  flex: 1;
 }
 
 .card-header {

@@ -7,6 +7,18 @@
 // When I click the blog article I want to view on the blog home page
 // Then the blog article is displayed in the interface with blog article title, description, author and date updated data
 
+// Sad Path:
+// Given I want access and read an available project has an incorrect page url
+// When I click the view blog article link button
+// Then the blog article is not visible
+// And a feedback message
+
+// Sad Path:
+// Given I want to view the list available project when no projects have been created yet
+// When I access the Student Dashboard
+// Then the list of available projects is empty
+// And a feedback message is displayed that ‘No available projects can be found
+
 // Cypress test case structure
 // Visit a web page.
 // Query for an element.
@@ -37,25 +49,52 @@
 // - Functional
 // - Acceptance
 // - Integration
-// - Unit
 
-describe('Post Resource', () => {
-  it('Creating a New Post', () => {
-    cy.visit('/posts/new') // 1.
+describe('Testing API GET, POST Endpoints - Creating a new blog article', () => {
+  // Functional Test
+  it('Test POST Request - creating a new blog article', () => {
+    cy.request('POST', 'http://localhost:3000/_content/articles', {}).then(
+      (response) => {
+        expect(response.isOkStatusCode) // 0.1, 0.2, 0.3
+      }
+    )
+  })
 
-    cy.get('input.post-title') // 2.
-      .type('My First Post') // 3.
+  // Functional Test
+  it('Test GET Request - Creating a new blog article', () => {
+    cy.request('http://localhost:3000/_content/articles').then((response) => {
+      expect(response.status).to.eq(200) // 0.4 - check 200 status code content/articles api endpoint
+    })
+  })
 
-    cy.get('input.post-body') // 4.
-      .type('Hello, world!') // 5.
+  it('Should visit the blog home page and check the newly created blog article can be accessed and viewed', () => {
+    // Given
+    cy.visit('http://localhost:3000/blog') // 1.
+    cy.get('.error-msg').should('not.exist') // 1.1
 
-    cy.contains('Submit') // 6.
-      .click() // 7.
+    // When
+    cy.get('ul li a:last') // 2.
+      .click() // 3.
 
-    cy.url() // 8.
-      .should('include', '/posts/my-first-post')
+    cy.url().should('include', '/blog/remember-the-research') // 4.
 
-    cy.get('h1') // 9.
-      .should('contain', 'My First Post')
+    cy.get('.error-msg').should('not.exist') // 4.1
+
+    cy.get('.article-title').should('have.class', 'article-title') // 5.
+
+    cy.get('h1').should('contain', 'Remember the Research') // 6.
+    cy.get('.article-description').should('have.class', 'article-description') // 7.
+    cy.get('p.article-description').should(
+      'have.text',
+      'Learn how to think as a Compouter Scienetist and understabnd that Computer Science undergraduate projects are not all about the build and coding.'
+    )
+    cy.get('.author').should('have.class', 'author')
+    cy.get('p.author').should('have.text', 'Author: Admin')
+    cy.get('.updatedAt').should(
+      'contain',
+      'Article last updated: April 22, 2021'
+    )
+    cy.get('.article-body.nuxt-content').should('contain', 'p') // 13, 14
+    cy.get('.article-body.nuxt-content h3').click()
   })
 })

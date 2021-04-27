@@ -38,7 +38,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .article {
   margin-left: 10px;
 }
@@ -85,7 +85,7 @@ span {
   padding-bottom: 30px;
 }
 
-.project-example-body div {
+.project-example-body div p {
   color: #a9b6cc;
   padding-bottom: 30px;
 }

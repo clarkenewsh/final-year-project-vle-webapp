@@ -85,6 +85,7 @@ section {
   border-radius: 0.375rem;
   padding: 50px;
   grid-column: 1/-1;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -123,12 +124,13 @@ a {
 
 li {
   flex-basis: 20%;
-  margin: 20px;
+  margin: 10px 0px;
   transition: all 0.2s ease;
   text-decoration: none;
   border: 1px solid #2d3748;
   border-radius: 0.375rem;
   padding: 10px 35px;
+  border-top: 5px solid #95998a;
 }
 
 li:hover {
@@ -148,6 +150,10 @@ span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+  }
+
+  li {
+    margin: 10px;
   }
 }
 </style>

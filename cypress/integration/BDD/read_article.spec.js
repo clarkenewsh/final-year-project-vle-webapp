@@ -1,8 +1,7 @@
 /* eslint-disable no-undef */
 // Feature: Students Read Blog Articles
 
-// User Story: As a Student, I want to view and read project examples posted by tutors to learn and understand what is required of a final year project. 
-
+// User Story: As a Student, I want to view and read project examples posted by tutors to learn and understand what is required of a final year project.
 
 // sneario: Student read blog article
 // Given I want to read a blog article
@@ -37,54 +36,52 @@
 // Test types here:
 // - Functional
 // - Acceptance
-// - Integration
-// - Unit
 
-describe('Testing API Blog Article POST Endpoints - Read a Blog Article', () => {
+describe('Testing API GET, POST Endpoints - Creating a new blog article', () => {
   // Functional Test
-
-  // Functional Test
-  it('Test GET Request - Creating a new available project', () => {
-    cy.request('http://localhost:3000/_content/projectexamples').then(
+  it('Test POST Request - creating a new blog article', () => {
+    cy.request('POST', 'http://localhost:3000/_content/articles', {}).then(
       (response) => {
-        expect(response.status).to.eq(200) // 0.4 - check 200 status code content/articles api endpoint
+        expect(response.isOkStatusCode) // 0.1, 0.2, 0.3
       }
     )
   })
 
-  it('Should visit the available projects page and check the newly created available project can be accessed and viewed', () => {
+  // Functional Test
+  it('Test GET Request - Creating a new blog article', () => {
+    cy.request('http://localhost:3000/_content/articles').then((response) => {
+      expect(response.status).to.eq(200) // 0.4 - check 200 status code content/articles api endpoint
+    })
+  })
+
+  it('Should visit the blog home page and check the newly created blog article can be accessed and viewed', () => {
     // Given
-    cy.visit('http://localhost:3000/projectexamples') // 1.
+    cy.visit('http://localhost:3000/blog') // 1.
     cy.get('.error-msg').should('not.exist') // 1.1
 
     // When
-    cy.get('ul li a:first') // 2.
+    cy.get('ul li a:last') // 2.
       .click() // 3.
 
-    cy.url().should('include', '/projectexamples/project-example-1-test') // 4.
+    cy.url().should('include', '/blog/remember-the-research') // 4.
 
     cy.get('.error-msg').should('not.exist') // 4.1
 
-    cy.get('.project-example-title').should(
-      'have.class',
-      'project-example-title'
-    ) // 5.
+    cy.get('.article-title').should('have.class', 'article-title') // 5.
 
-    cy.get('h1').should('contain', 'Project example 1') // 6.
-    cy.get('.project-example-description').should(
-      'have.class',
-      'project-example-description'
-    ) // 7.
-    cy.get('p.project-example-description').should(
-      'contain',
-      'A test for a project example slug'
+    cy.get('h1').should('contain', 'Remember the Research') // 6.
+    cy.get('.article-description').should('have.class', 'article-description') // 7.
+    cy.get('p.article-description').should(
+      'have.text',
+      'Learn how to think as a Compouter Scienetist and understabnd that Computer Science undergraduate projects are not all about the build and coding.'
     )
     cy.get('.author').should('have.class', 'author')
-    cy.get('p.author').should('contain', 'Author: Tutor')
+    cy.get('p.author').should('have.text', 'Author: Admin')
     cy.get('.updatedAt').should(
       'contain',
-      'Project last updated: April 17, 2021'
+      'Article last updated: April 22, 2021'
     )
-    cy.get('.project-example-body.nuxt-content').should('contain', 'p') // 13, 14
+    cy.get('.article-body.nuxt-content').should('contain', 'p') // 13, 14
+    cy.get('.article-body.nuxt-content h3').click()
   })
 })
