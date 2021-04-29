@@ -1,12 +1,12 @@
 /* eslint-disable no-undef */
-// Testing the staff dashbaord login page route - TDD unit
+// Testing the Student dashbaord login page route - TDD unit
 
 // // TDD Test Case Logic:
-//    1. visit student dashboard login route url
-//    2. url chould include /studentdashboard/index
-//    3. Query for the head title tag
+//    1. visit staff login page route url http://localhost:3000/studentdashboard/
+//    2. Grab the url and ensure it should includes /studentdashboard/
+//    3. Get the page title head contained in the head section
 //    4. Interact with the head title tag
-//    5. The title should be contain the page title
+//    5. The title should contain the page title name 'Student Login'
 
 describe('The Student Dashboard Login Page', () => {
   it('should visit the student dashbaord login page and check its route url and head title tag', () => {
@@ -20,9 +20,3 @@ describe('The Student Dashboard Login Page', () => {
     cy.get('title').should('have.text', 'Student Login')
   })
 })
-
-//  Cypress test case logic reminder
-// Visit a web page.
-// Query for an element.
-// Interact with that element.
-// Assert about the content on the page.

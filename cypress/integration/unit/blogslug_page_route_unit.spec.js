@@ -24,9 +24,3 @@ describe('Blog Article slug path url', () => {
     cy.get('.article-title').should('have.text', 'My first blog post')
   })
 })
-
-//  Cypress test case logic reminder
-// Visit a web page.
-// Query for an element.
-// Interact with that element.
-// Assert about the content on the page.

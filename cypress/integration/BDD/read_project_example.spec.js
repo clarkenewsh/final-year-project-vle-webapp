@@ -20,82 +20,81 @@
 // Then the list of project examples is empty
 // And a feedback message is displayed that ‘No project examples can be found’
 
-// Cypress test case structure
-// Visit a web page.
-// Query for an element.
-// Interact with that element.
-// Assert about the content on the page.
-
 // // BDD Test Case Logic:
+// 0.1 Check the nuxt content url GET request http://localhost:3000/_content/projectexamples and check the 200 status code on GET Request
 // 1. Visit the page http://localhost:3000/studentdashboard/dashboard
 // 1.1 I dont get a 404 error code with text content 'An error occured'
-// 2. Find a project example link from the list of project examples
+// 2. Get button with class .btn btn-primary available-project
 // 3. Click it
-// 4. Grab the url and ensure it should include /projectexamples/my-first-project-example
-// 4.1 I dont get a 404 error code with text content 'An error occured'
-// 5. Get the h1 tag with .projexct-example-title class
-// 6. Assert it contains the h1 text 'My first project example'
-// 7. Get the p tag with .project-example-description class
-// 8. Assert it p tag contains the text 'A description of my first project example'
-// 9. Get the p tag with .updatedAt class
-// 10. Assert its value contains a correct date format text of month day, year
-// 11. Get the p tag with .author class
-// 12. Assert the p tag contains the text 'Tutor'
-// 13. Get the p tag with .project-example-body class
-// 14. Assert the p tag includes text content
-// 15. Interact with several external links contained in the project example body content
-// 16. Return back to the student dashboard and select another project example
+// 4. Grab the url and ensure it includes http://localhost:3000/projectexamples/
+// 4.1 I dont get a 404 error code with text content 'Oops..An error occured'
+// 5. Find a available project from the list of project examples
+// 6. Click it
+// 7. Grab the url and ensure it should include /projectexamples/project-example-3
+// 7.1 I dont get a 404 error code with text content 'Oops..An error occured'
+// 8. Get the h1 tag with .project-example-title class
+// 9. Assert it contains the h1 text 'Project Title'
+// 10. Get the p tag with .project-example-description class
+// 11. Assert it p tag contains the text 'A description of the project-example'
+// 14. Get the p tag with .author class
+// 15. Assert the p tag contains the text 'Author: 'Tutor'
+// 16. Get the p tag with .updatedAt class
+// 17. Assert its value contains a correct date format text of month day, year
+// 18. Get the p tag with .available-project-body class
+// 19. Assert the h1 tag includes text content 'Project Description'
 
 // Test types here:
 // - Functional
 // - Acceptance
 // - Integration
 
-describe('Testing API GET, POST Endpoints - Creating a new blog article', () => {
+describe('Testing API GET Endpoints - Get project examples and read and project examples slug', () => {
   // Functional Test
-  it('Test POST Request - creating a new blog article', () => {
-    cy.request('POST', 'http://localhost:3000/_content/articles', {}).then(
+  it('Test GET Request - Get a new available project', () => {
+    cy.request('http://localhost:3000/_content/projectexamples').then(
       (response) => {
-        expect(response.isOkStatusCode) // 0.1, 0.2, 0.3
+        expect(response.status).to.eq(200) // 0.1 - check 200 status code content/availableprojects api endpoint
       }
     )
   })
 
-  // Functional Test
-  it('Test GET Request - Creating a new blog article', () => {
-    cy.request('http://localhost:3000/_content/articles').then((response) => {
-      expect(response.status).to.eq(200) // 0.4 - check 200 status code content/articles api endpoint
-    })
-  })
-
-  it('Should visit the blog home page and check the newly created blog article can be accessed and viewed', () => {
-    // Given
-    cy.visit('http://localhost:3000/blog') // 1.
+  it('Should visit the student dashboard home page, locate available projects page and access an project examples slug', () => {
+    cy.visit('http://localhost:3000/studentdashboard/dashboard') // 1.
     cy.get('.error-msg').should('not.exist') // 1.1
 
-    // When
-    cy.get('ul li a:last') // 2.
-      .click() // 3.
+    cy.get('.project-example-btn').click() // 2, 3.
+    cy.url().should('include', '/projectexamples/') // 4.
 
-    cy.url().should('include', '/blog/remember-the-research') // 4.
+    cy.get('ul li a:last') // 5.
+      .click() // 6.
 
-    cy.get('.error-msg').should('not.exist') // 4.1
+    cy.url().should('include', '/projectexamples/project-example-3') // 7.
 
-    cy.get('.article-title').should('have.class', 'article-title') // 5.
+    cy.get('.error-msg').should('not.exist') // 7.1
 
-    cy.get('h1').should('contain', 'Remember the Research') // 6.
-    cy.get('.article-description').should('have.class', 'article-description') // 7.
-    cy.get('p.article-description').should(
-      'have.text',
-      'Learn how to think as a Compouter Scienetist and understabnd that Computer Science undergraduate projects are not all about the build and coding.'
-    )
-    cy.get('.author').should('have.class', 'author')
-    cy.get('p.author').should('have.text', 'Author: Admin')
+    cy.get('.project-example-title').should(
+      'have.class',
+      'project-example-title'
+    ) // 8
+
+    cy.get('h1').should('contain', 'Project example 3') // 9.
+    cy.get('.project-example-description').should(
+      'have.class',
+      'project-example-description'
+    ) // 10.
+    cy.get('p.project-example-description').should(
+      'contain',
+      'Testing availableproject 2'
+    ) // 11.
+    cy.get('.author').should('have.class', 'author') // 14.
+    cy.get('p.author').should('contain', 'Author: Tutor') // 15.
     cy.get('.updatedAt').should(
       'contain',
-      'Article last updated: April 22, 2021'
-    )
-    cy.get('.article-body.nuxt-content').should('contain', 'p') // 13, 14
-    cy.get('.article-body.nuxt-content h3').click()
+      'Project last updated: April 17, 2021'
+    ) // 16, 17.
+    cy.get('.project-example-body.nuxt-content h1').should(
+      'have.text',
+      'Project Description'
+    ) // 18, 19.
   })
 })

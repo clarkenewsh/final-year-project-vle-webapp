@@ -2,27 +2,21 @@
 // Testing the staff dashbaord page route - TDD unit
 
 // // TDD Test Case Logic:
-//    1. visit staff dashboard route url
-//    2. url chould include /staffdashboard/dashboard
-//    3. Query for the head title tag
+//    1. visit staff login page route url http://localhost:3000/staffdashboard/dashboard
+//    2. Grab the url and ensure it should includes /staffdashboard/dashboard
+//    3. Get the page title head contained in the head section
 //    4. Interact with the head title tag
-//    5. The title should be contain the page title
+//    5. The title should contain the page title name 'Staff Dashboard'
 
 describe('The Staff Dashboard Page', () => {
   it('should visit the staff dashbaord page and check its route url and head title tag', () => {
     // Given
-    cy.visit('http://localhost:3000/staffdashbaord/dashboard')
+    cy.visit('http://localhost:3000/staffdashboard/dashboard')
 
     // When
-    cy.url().should('include', '/staffdashbaord/dashboard')
+    cy.url().should('include', '/staffdashboard/dashboard')
 
     // Then
     cy.get('title').should('have.text', 'Staff Dashboard')
   })
 })
-
-//  Cypress test case logic reminder
-// Visit a web page.
-// Query for an element.
-// Interact with that element.
-// Assert about the content on the page.

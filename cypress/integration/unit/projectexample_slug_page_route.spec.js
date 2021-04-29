@@ -26,9 +26,3 @@ describe('Project example slug path url', () => {
     cy.get('.project-example-title').should('have.text', 'Project example 1')
   })
 })
-
-//  Cypress test case logic reminder
-// Visit a web page.
-// Query for an element.
-// Interact with that element.
-// Assert about the content on the page.

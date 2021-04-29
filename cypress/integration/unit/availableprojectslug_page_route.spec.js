@@ -12,10 +12,10 @@
 describe('Available Project slug path url', () => {
   it('should visit a dynamic available project slug path and check its path route url and project title tag', () => {
     // Given
-    cy.visit('http://localhost:3000/availableprojects/available-project-1-test')
+    cy.visit('http://localhost:3000/availableprojects/first-week-app')
 
     // When
-    cy.url().should('include', '/availableprojects/available-project-1-test')
+    cy.url().should('include', '/availableprojects/first-week-app')
 
     // Then
     cy.get('.available-project-title').should(
@@ -25,13 +25,7 @@ describe('Available Project slug path url', () => {
     // And Then
     cy.get('.available-project-title').should(
       'have.text',
-      'Available project 1'
+      'EHU CS Students First week app'
     )
   })
 })
-
-//  Cypress test case logic reminder
-// Visit a web page.
-// Query for an element.
-// Interact with that element.
-// Assert about the content on the page.
