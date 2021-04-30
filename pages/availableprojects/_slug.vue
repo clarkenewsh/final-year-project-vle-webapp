@@ -8,7 +8,6 @@
       <p class="author">
         <span>Project owner:</span> {{ availableproject.author }}
       </p>
-      <img :src="availableproject.img" :alt="availableproject.alt" />
       <p class="updatedAt">
         Project last updated: {{ formatDate(availableproject.updatedAt) }}
       </p>
