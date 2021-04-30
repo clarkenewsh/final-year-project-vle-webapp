@@ -1,7 +1,6 @@
 ---
 title: Recipe app with shopping list feature
 description: Web Design & Development Project
-img: availableproject-2.jpg
 alt: Recipe app with shopping list feature project
 author: Dave Walsh 
 ---

@@ -1,7 +1,6 @@
 ---
 title: Voice controlled website accessibility testing
 description: Web Design & Development Project
-img: availableproject-2.jpg
 alt: Voice controlled website accessibility testing project
 author: Dave Walsh 
 ---

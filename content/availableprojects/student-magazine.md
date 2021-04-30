@@ -1,7 +1,6 @@
 ---
 title: Student Magazine
 description: Web Design & Development Project
-img: student-magazine.jpg
 alt: Student Magazine project
 author: Dave Walsh 
 ---

@@ -1,7 +1,6 @@
 ---
 title: EHU CS Students First week app
 description: Web Design & Development Project
-img: availableproject-2.jpg
 alt: EHU CS Students First week app project
 author: Dave Walsh 
 ---

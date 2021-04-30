@@ -1,7 +1,6 @@
 ---
 title: Project example 1 
 description: A test for a project example slug
-img: availableproject-1.jpg
 alt: Project example 1 
 author: Tutor
 ---

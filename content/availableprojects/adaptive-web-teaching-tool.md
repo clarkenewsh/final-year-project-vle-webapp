@@ -1,7 +1,6 @@
 ---
 title: Adaptive web teaching tool
 description: Web Design & Development Project
-img: availableproject-2.jpg
 alt: Adaptive web teaching tool project
 author: Dave Walsh 
 ---

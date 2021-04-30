@@ -1,7 +1,6 @@
 ---
 title: First Week Freshers App
 description: Web Design & development Project Example
-img: projectexample2.jpg
 alt: Project example 2 
 author: Tutor
 ---

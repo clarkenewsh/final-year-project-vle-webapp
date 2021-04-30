@@ -1,7 +1,6 @@
 ---
 title: Student Report Card
 description: Web Design & Development Project
-img: student-magazine.jpg
 alt: Student Report Card project
 author: Dave Walsh 
 ---

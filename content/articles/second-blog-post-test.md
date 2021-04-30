@@ -1,7 +1,6 @@
 ---
 title: My second Blog Post
 description: Testing blog posts forthe home page blogs
-img: second-blog-post.jpg
 alt: my second blog post
 author: Admin
 ---

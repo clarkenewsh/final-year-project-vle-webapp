@@ -1,7 +1,6 @@
 ---
 title: Alexa EHU learning app
 description: Web Design & Development Project
-img: availableproject-2.jpg
 alt: Alexa EHU learning app project
 author: Dave Walsh 
 ---

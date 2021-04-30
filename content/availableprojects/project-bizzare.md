@@ -1,7 +1,6 @@
 ---
 title: Project Bizzare 
 description: Web Design & Development Project
-img: availableproject-1.jpg
 alt: Project Bizzare project 
 author: Dave Walsh 
 ---

@@ -1,7 +1,6 @@
 ---
 title: Project example 3 
 description: Testing availableproject 2
-img: projectexample2.jpg
 alt: Project example 2 
 author: Tutor
 ---
