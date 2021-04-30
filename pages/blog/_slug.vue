@@ -3,7 +3,6 @@
     <div class="article-header">
       <h1 class="article-title">{{ article.title }}</h1>
       <p class="article-description">{{ article.description }}</p>
-      <img :src="article.img" :alt="article.alt" />
       <p class="author">Author: {{ article.author }}</p>
       <p class="updatedAt">
         Article last updated: {{ formatDate(article.updatedAt) }}

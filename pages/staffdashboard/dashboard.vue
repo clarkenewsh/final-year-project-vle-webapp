@@ -20,7 +20,11 @@
         </svg>
         <h5 class="card-title">Project Examples</h5>
         <p class="card-text">A respository of project examples</p>
-        <NuxtLink to="/projectexamples/" class="btn btn-primary">View</NuxtLink>
+        <NuxtLink
+          to="/projectexamples/"
+          class="btn btn-primary project-example-btn"
+          >View</NuxtLink
+        >
       </div>
     </div>
     <div class="card">
@@ -43,7 +47,9 @@
         </svg>
         <h5 class="card-title">Available Projects</h5>
         <p class="card-text">A respository of available projects</p>
-        <NuxtLink to="/availableprojects/" class="btn btn-primary"
+        <NuxtLink
+          to="/availableprojects/"
+          class="btn btn-primary available-project-btn"
           >View</NuxtLink
         >
       </div>

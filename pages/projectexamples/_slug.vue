@@ -5,7 +5,6 @@
       <p class="project-example-description">
         {{ projectexample.description }}
       </p>
-      <img :src="projectexample.img" :alt="projectexample.alt" />
       <p class="author"><span>Author:</span> {{ projectexample.author }}</p>
       <p class="updatedAt">
         Project last updated: {{ formatDate(projectexample.updatedAt) }}
