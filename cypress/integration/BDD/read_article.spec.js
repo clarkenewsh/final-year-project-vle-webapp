@@ -63,7 +63,7 @@ describe('Testing API GET Endpoints - Get a new blog article', () => {
     cy.get('p.author').should('have.text', 'Author: Admin') // 10.
     cy.get('.updatedAt').should(
       'contain',
-      'Article last updated: April 22, 2021'
+      'Article last updated: April 30, 2021'
     ) // 11, 12
     cy.get('.article-body.nuxt-content').should('contain', 'p') // 13, 14
   })

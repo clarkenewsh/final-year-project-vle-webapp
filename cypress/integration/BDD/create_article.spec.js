@@ -1,5 +1,4 @@
 /* eslint-disable no-undef */
-
 // Feature: Create Blog Articles
 
 // User Story: As a system Admin, I want to create blog articles, so that they can be accessed and viewed by students to learn about final year projects.
@@ -35,12 +34,6 @@
 // - Functional
 // - Acceptance
 // - Integration
-
-// Cypress test case structure:
-// Visit a web page.
-// Query for an element.
-// Interact with that element.
-// Assert about the content on the page.
 
 describe('Testing API GET, POST Endpoints - Creating a new blog article', () => {
   // Functional Test
@@ -84,7 +77,7 @@ describe('Testing API GET, POST Endpoints - Creating a new blog article', () => 
     cy.get('p.author').should('have.text', 'Author: Admin')
     cy.get('.updatedAt').should(
       'contain',
-      'Article last updated: April 16, 2021'
+      'Article last updated: April 30, 2021'
     )
     cy.get('.article-body.nuxt-content').should('contain', 'p') // 13, 14
   })

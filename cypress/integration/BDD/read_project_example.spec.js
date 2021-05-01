@@ -90,7 +90,7 @@ describe('Testing API GET Endpoints - Get project examples and read and project 
     cy.get('p.author').should('contain', 'Author: Tutor') // 15.
     cy.get('.updatedAt').should(
       'contain',
-      'Project last updated: April 17, 2021'
+      'Project last updated: April 30, 2021'
     ) // 16, 17.
     cy.get('.project-example-body.nuxt-content h1').should(
       'have.text',

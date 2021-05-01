@@ -19,15 +19,15 @@
 // 2. Find a project link from the list of available projects
 // 3. Click it
 // 4. Grab the url and ensure it should include /availableprojects/project-title
-// 4.1 I dont get a 404 error code with text content 'An error occured'
+// 4.1 I dont get a 404 error code with text content 'OOps..An error occured'
 // 5. Get the h1 tag with .availableproject-title class
 // 6. Assert it contains the h1 text 'title-availableproject'
 // 7. Get the p tag with .availableproject-description class
 // 8. Assert it p tag contains the text 'A description of my first available project'
-// 9. Get the p tag with .updatedAt class
-// 10. Assert its value contains a correct date format text of month day, year
-// 11. Get the p tag with .author class
-// 12. Assert the p tag contains the text 'Project Supervisor'
+// 9. Get the p tag with .author class
+// 10. Assert the p tag contains the text 'Project Supervisor'
+// 11. Get the p tag with .updatedAt class
+// 12. Assert its value contains a correct date format text of month day, year
 // 13. Get the p tag with .availableproject-body class
 // 14. Assert the p tag includes text content
 
@@ -35,13 +35,6 @@
 // - Functional
 // - Acceptance
 // - Integration
-// - Unit
-
-// Cypress test case structure
-// Visit a web page.
-// Query for an element.
-// Interact with that element.
-// Assert about the content on the page.
 
 describe('Testing API GET, POST Endpoints - Creating a new available project', () => {
   // Functional Test
@@ -65,11 +58,9 @@ describe('Testing API GET, POST Endpoints - Creating a new available project', (
   })
 
   it('Should visit the available projects page and check the newly created available project can be accessed and viewed', () => {
-    // Given
     cy.visit('http://localhost:3000/availableprojects') // 1.
     cy.get('.error-msg').should('not.exist') // 1.1
 
-    // When
     cy.get('ul li a:first') // 2.
       .click() // 3.
 
@@ -90,13 +81,13 @@ describe('Testing API GET, POST Endpoints - Creating a new available project', (
     cy.get('p.available-project-description').should(
       'contain',
       'Web Design & Development Project'
-    )
-    cy.get('.author').should('have.class', 'author')
-    cy.get('p.author').should('contain', 'Project owner: Dave Walsh')
+    )// 8.
+    cy.get('.author').should('have.class', 'author') // 9.
+    cy.get('p.author').should('contain', 'Project owner: Dave Walsh') // 10.
     cy.get('.updatedAt').should(
       'contain',
-      'Project last updated: April 21, 2021'
-    )
+      'Project last updated: April 30, 2021'
+    ) // 11, 12
     cy.get('.available-project-body.nuxt-content').should('contain', 'p') // 13, 14
   })
 })

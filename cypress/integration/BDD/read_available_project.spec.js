@@ -90,7 +90,7 @@ describe('Testing API GET Endpoints - Get available projects and read and availa
     cy.get('p.author').should('contain', 'Project owner: Dave Walsh') // 15.
     cy.get('.updatedAt').should(
       'contain',
-      'Project last updated: April 29, 2021'
+      'Project last updated: April 30, 2021'
     ) // 16, 17.
     cy.get('.available-project-body.nuxt-content h1').should(
       'have.text',

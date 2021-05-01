@@ -8,46 +8,41 @@
 // When I click the delete blog article button
 // Then the blog article is deleted and removed from the list of blog articles
 
-// BDD Test Case Logic:
-
+/// // BDD Test Case Logic:
+// 0.1 Admin deletes a Nuxt content/blog .md slug file
+// 0.4 Check the nuxt content url GET request http://localhost:3000/_content/articles and check the 200 status code on GET Request
 // 1. Visit the page http://localhost:3000/blog
-// 1.1 I DONT get a 404 error code with text content 'An error occured'
-// 2. Find a blog article link from nuxt content/articles folder directory
-// 3. Click delete
-// 3.1 Grab and Check the nuxt content url http://localhost:3000/_content/articles and check the deleted blog article slug is removed from blog article json objects (function test)
-// 4. Visit the page http://localhost:3000/blog
-// 4.1 I dont get a 404 error code with text content 'An error occured'
-// 5. Check the blog article has been removed from the list of blog articles
+// 1.1 I DONT get a 404 error code with text content 'Opps. An error occured'
+// 2. Check the the blog article 'my-first-blog-post' does ot exisit in the list of blog articles
 
-// Test types here:
+// Test types covered:
 // - Functional
 // - Acceptance
 // - Integration
-// - Unit
 
-// Cypress test case structure
-// Visit a web page.
-// Query for an element.
-// Interact with that element.
-// Assert about the content on the page.
+describe('Testing API DELETE, GET Endpoints - Deleting a blog article', () => {
+  // Functional Test
+  it('Test DELETE Request - creating a new blog article', () => {
+    cy.request(
+      'DELETE',
+      'http://localhost:3000/_content/articles/first-blog-post-test',
+      {}
+    ).then((response) => {
+      expect(response.isOkStatusCode) // 0.1, 0.2, 0.3
+    })
+  })
 
-describe('Post Resource', () => {
-  it('Creating a New Post', () => {
-    cy.visit('/posts/new') // 1.
+  // Functional Test
+  it('Test GET Request - Get updated blog articles', () => {
+    cy.request('http://localhost:3000/_content/articles').then((response) => {
+      expect(response.status).to.eq(200) // 0.4 - check 200 status code content/articles api endpoint
+    })
+  })
 
-    cy.get('input.post-title') // 2.
-      .type('My First Post') // 3.
+  it('Should visit the blog home page and check the first blog article was deleted from the DOM', () => {
+    cy.visit('http://localhost:3000/blog') // 1.
+    cy.get('.error-msg').should('not.exist') // 1.1
 
-    cy.get('input.post-body') // 4.
-      .type('Hello, world!') // 5.
-
-    cy.contains('Submit') // 6.
-      .click() // 7.
-
-    cy.url() // 8.
-      .should('include', '/posts/my-first-post')
-
-    cy.get('h1') // 9.
-      .should('contain', 'My First Post')
+    cy.get('ul li a:first').should('not.exist') // 2.
   })
 })

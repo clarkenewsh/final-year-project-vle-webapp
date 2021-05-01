@@ -10,44 +10,43 @@
 
 // BDD Test Case Logic:
 
+/// / // BDD Test Case Logic:
+// 0.1 Admin deletes a Nuxt content/availableprojects .md slug file
+// 0.4 Check the nuxt content url GET request http://localhost:3000/_content/availableprojects and check the 200 status code on GET Request
 // 1. Visit the page http://localhost:3000/availableprojects
-// 1.1 I DONT get a 404 error code with text content 'An error occured'
-// 2. Find a blog article link from nuxt content/availableprojects folder directory
-// 3. Click delete
-// 3.1 Grab and Check the nuxt content url http://localhost:3000/_content/availableprojects and check the deleted project slug is removed from available projects json objects (function test)
-// 4. Visit the page http://localhost:3000/availableprojects
-// 4.1 I dont get a 404 error code with text content 'An error occured'
-// 5. Check the available project has been removed from the list of available project
+// 1.1 I DONT get a 404 error code with text content 'Oops..An error occured'
+// 2. Check the the blog article 'adaptive-web-teaching-tool' does ot exisit in the list of project examplea
 
 // Test types here:
 // - Functional
 // - Acceptance
 // - Integration
-// - Unit
 
-// Cypress test case structure
-// Visit a web page.
-// Query for an element.
-// Interact with that element.
-// Assert about the content on the page.
+describe('Testing API DELETE, GET Endpoints - Deleting a available project', () => {
+  // Functional Test
+  it('Test DELETE Request - creating a available project', () => {
+    cy.request(
+      'DELETE',
+      'http://localhost:3000/_content/availableprojects/adaptive-web-teaching-tool',
+      {}
+    ).then((response) => {
+      expect(response.isOkStatusCode) // 0.1, 0.2, 0.3
+    })
+  })
 
-describe('Post Resource', () => {
-  it('Creating a New Post', () => {
-    cy.visit('/posts/new') // 1.
+  // Functional Test
+  it('Test GET Request - Get updated project examples', () => {
+    cy.request('http://localhost:3000/_content/availableprojects').then(
+      (response) => {
+        expect(response.status).to.eq(200) // 0.4 - check 200 status code content/articles api endpoint
+      }
+    )
+  })
 
-    cy.get('input.post-title') // 2.
-      .type('My First Post') // 3.
+  it('Should visit the project examples page and check the project example example was deleted from the DOM', () => {
+    cy.visit('http://localhost:3000/availableprojects') // 1.
+    cy.get('.error-msg').should('not.exist') // 1.1
 
-    cy.get('input.post-body') // 4.
-      .type('Hello, world!') // 5.
-
-    cy.contains('Submit') // 6.
-      .click() // 7.
-
-    cy.url() // 8.
-      .should('include', '/posts/my-first-post')
-
-    cy.get('h1') // 9.
-      .should('contain', 'My First Post')
+    cy.get('ul li a:first').should('not.exist') // 2.
   })
 })
