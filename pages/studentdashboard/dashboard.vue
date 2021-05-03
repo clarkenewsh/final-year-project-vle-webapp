@@ -61,22 +61,15 @@
 export default {
   // Assign blog layout to blog home
   layout: 'default',
-  async asyncData({ $content, params }) {
-    const projectexamples = await $content('projectexamples')
-      .only(['title', 'description', 'img', 'slug', 'author'])
-      .sortBy('createdAt', 'asc')
-      .fetch()
 
-    return {
-      projectexamples,
-    }
-  },
   data() {
+    // Assign page title
     return {
       title: 'Student Dashboard',
     }
   },
   head() {
+    // Return page title
     return {
       title: this.title,
     }

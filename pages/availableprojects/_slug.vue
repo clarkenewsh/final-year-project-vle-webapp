@@ -62,7 +62,6 @@ export default {
 }
 
 .available-project-description {
-  border-bottom: 3px solid #bdcc94;
   color: #a9b6cc;
 }
 
@@ -78,25 +77,25 @@ span {
 }
 
 .available-project-body h1 {
-  padding: 50px 0px 20px 0px;
+  padding: 30px 0px 20px 0px;
 }
 
 .available-project-body h2 {
-  padding: 50px 0px 20px 0px;
+  padding: 30px 0px 20px 0px;
 }
 
 .available-project-body h3 {
-  padding: 50px 0px 20px 0px;
+  padding: 10px 0px 20px 0px;
 }
 
 .available-project-body h4 {
-  padding: 50px 0px 20px 0px;
+  padding: 10px 0px 20px 0px;
 }
 
 .available-project-body p {
   color: #a9b6cc;
   padding-bottom: 30px;
-  border-bottom: 2px solid #bdcc94;
+  /* border-bottom: 2px solid #bdcc94; */
 }
 
 .available-project-body .text-block {
@@ -115,5 +114,11 @@ span {
   border-radius: 10px;
   color: #bdcc94;
   padding: 30px;
+  margin: 50px;
+}
+
+.line-separate {
+  border-bottom: 3px solid #2d3748;
+  padding-bottom: 20px;
 }
 </style>

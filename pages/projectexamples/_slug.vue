@@ -60,7 +60,6 @@ export default {
 }
 
 .project-example-description {
-  border-bottom: 3px solid #bdcc94;
   color: #a9b6cc;
 }
 
@@ -71,30 +70,53 @@ export default {
 span {
   font-size: 90%;
 }
-
 .project-example-body {
-  padding: 30px 0px;
+  padding: 40px 0px;
+}
+
+.project-example-body h1 {
+  padding: 30px 0px 20px 0px;
 }
 
 .project-example-body h2 {
-  padding: 15px 0px;
+  padding: 30px 0px 20px 0px;
 }
 
 .project-example-body h3 {
-  padding: 15px 0px;
+  padding: 10px 0px 20px 0px;
 }
 
 .project-example-body h4 {
-  padding: 15px 0px;
+  padding: 10px 0px 20px 0px;
 }
 
 .project-example-body p {
   color: #a9b6cc;
   padding-bottom: 30px;
+  /* border-bottom: 2px solid #bdcc94; */
 }
 
-.project-example-body div p {
+.project-example-body .text-block {
   color: #a9b6cc;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+.project-example-body .supervisor-block {
+  border: 2px solid #bdcc94;
+  padding: 25px;
+  border-radius: 0.375rem;
+}
+
+.projec-example-body .border-text-block {
+  border: 5px solid #bdcc94;
+  border-radius: 10px;
+  color: #bdcc94;
+  padding: 30px;
+  margin: 50px;
+}
+
+.line-separate {
+  border-bottom: 3px solid #2d3748;
+  padding-bottom: 20px;
 }
 </style>

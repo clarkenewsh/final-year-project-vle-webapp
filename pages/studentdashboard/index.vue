@@ -21,7 +21,6 @@
           placeholder="Password"
         />
       </div>
-      <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
       <NuxtLink to="/studentdashboard/dashboard/" class="btn btn-primary"
         >Submit</NuxtLink
       >

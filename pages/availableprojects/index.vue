@@ -137,7 +137,7 @@ li {
   text-decoration: none;
   border: 1px solid #2d3748;
   border-radius: 0.375rem;
-  padding: 10px 35px;
+  padding: 30px 35px;
   border-top: 5px solid #95998a;
 }
 

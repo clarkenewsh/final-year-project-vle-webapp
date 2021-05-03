@@ -61,22 +61,15 @@
 export default {
   // Assign default layout to staff dashboard home
   layout: 'default',
-  async asyncData({ $content, params }) {
-    const availableprojects = await $content('availableprojects')
-      .only(['title', 'description', 'img', 'slug', 'author'])
-      .sortBy('createdAt', 'asc')
-      .fetch()
 
-    return {
-      availableprojects,
-    }
-  },
   data() {
+    // Assign page title
     return {
       title: 'Staff Dashboard',
     }
   },
   head() {
+    // Return page title
     return {
       title: this.title,
     }
