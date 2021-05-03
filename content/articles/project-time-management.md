@@ -29,8 +29,7 @@ Create a work space that works for you, find a good playlist that keeps your ene
 ## Link to external resource and software
 
 
-<a href="https://nuxtjs.org">Linkt to project managemnt tool 1</a>
+<!-- <a href="https://nuxtjs.org">Linkt to project managemnt tool 1</a>
 
-<a href="https://nuxtjs.org">Linkt to project managemnt tool 2</a>
+<a href="https://nuxtjs.org">Linkt to project managemnt tool 2</a> -->
 
-<img :src="~/assets/blog-1.jpeg" />
