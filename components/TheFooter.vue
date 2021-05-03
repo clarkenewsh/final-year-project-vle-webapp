@@ -6,6 +6,7 @@
 </template>
 
 <script>
+// Assign name for Nuxt component
 export default {
   name: 'TheFooter',
 }
