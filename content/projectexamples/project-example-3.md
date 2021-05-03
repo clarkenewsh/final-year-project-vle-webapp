@@ -18,27 +18,28 @@ Interaction should be designed. The designs should then be built (using BDD for 
 Once built it should be user tested and results written up. (NOTE:-- this should not be a static
 site)
 
-    
 ## Skills covered: Technical and non-technical
 
-### Technical skills:
+#### Technical skills:
 
 
-### Non-technical skills:
+#### Non-technical skills:
 
 ## Process and workflow
 
-1) Reserach and Planning
-2) Methodology
-3) Development
-4) Testing
-5) Deploy
-6) Monitor
+1. Reserach and Planning
+2. Reserach and Planning
+3. Development
+4. Testing
+5. Deploy
+6. Monitor
 
 ## Image examples of projects here
-
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia.
 
 ## Top tips
+
+## Links to additional learning 
+Links to learning and research papers here 

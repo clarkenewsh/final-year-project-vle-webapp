@@ -4,8 +4,10 @@ description: Web Design & Development Project
 alt: Student Magazine project
 author: Dave Walsh 
 ---
+<div class="line-separate">
 
 # Project Brief 
+
 This is a website that will have some sort of back end entry and will be a UI heavy frontend.
 The site should look more like the face magazine (an old paper magazine) than a current
 magazine-styled website but your build and design should also include some css html
@@ -15,9 +17,25 @@ or one plus 8 (https://www.oneplus.com/uk/8-pro ) or one plus 8T
 (https://www.tandfonline.com/doi/full/10.1080/0144929X.2019.1602167?casa_token=3Ak
 Hwpnf-m4AAAAA%3AAjSEz-byP4qZZacuaTtRaWX3sPxBKRhSWf6eOnBeHvHsiPtTLBXdcGvefCM9ilq35piRafywLU& )
 
-## Project Supervisor contact details
-Dave Walsh
+## Project Supervisor Details
+#### Dave Walsh
+
+Department: Department of Computer Science
+
 Email: Walshd@edgehill.ac.uk
+
+Office: THF12
+<ul>
+    <li>BSc (Hons) Business Information Systems</li>
+    <li>MSc Computing and Information Systems</li>
+    <li>Currently PhD Candidate in Information Retrieval at Sheffield University</li>
+    <li>BCS Member</li>
+</ul>
+
+</div>
+
+
+
 
 ## Project Requiremnets
 All projects below are vague in the description and are guidelines for a discussion
@@ -26,57 +44,27 @@ chatting and firming up a direction with him.
 The idea is that you research your ideal job by looking at the current live job specs and assessing
 what they want and what you can currently opffer and then we will try and carve a project from
 one the following topics that will enable you to be ready to apply for jobs like the one you want.
-<div class="text-block">
-1) Project management (whole project)
-</div>
-<div class="text-block">
-2) extensive background research in both literature (some of the ideas have a starting
-paper or two linked) and inspiration (layouts, fonts, colours, features).
-</div>
-<div class="text-block">
-3) Understanding of research and development methodologies and how they are linked.
-(decide on which ones you will use.. It will a number not less than 3)
-</div>
-<div class="text-block">
-4) Primary research and analysis that informs the requirements of the build
-</div>
-<div class="text-block">
-5) Plan and use version control
-</div>
-<div class="text-block">
-6) Website or app content gathering and creation
-</div>
-<div class="text-block">
-7) Design of the interface (experiments - lots of experiments (font choices, colour
-choice, to create a style guide) layout structure, information architecture, )
-</div>
-<div class="text-block">
-8) design (calls to action identification - user stories, personas, customer story
-mapping, ( https://uxplanet.org/my-10-step-ux-ui-workflow-2019-74bb78723414 ))
-</div>
-<div class="text-block">
-9) Build of artefact (semantic HTML, CSS grid + sub-grid, dynamic data source (from
-cms you build, API or a structured JSON file)
-</div>
-<div class="text-block">
-10) Technical Testing (TDD/BDD, user testing, expert testing, performance testing
-(chrome dev tools and lighthouse, accessibility testing)
-</div>
-<div class="text-block">
-11) Post-build research to see if the site works for the purpose designed (not technically
-but objectively (Does the site meet your aim and objectives?)
-</div>
-<div class="text-block">
-12) Final analysis
-</div>
-<div class="text-block">
-13) Write up (latex - using overleaf, refs in bib file from google scholar)
-</div>
+
+1. Project management (whole project)
+2. Extensive background research in both literature (some of the ideas have a starting paper or two linked) and inspiration (layouts, fonts, colours, features).
+3. Understanding of research and development methodologies and how they are linked (decide on which ones you will use.. It will a number not less than 3).
+4. Primary research and analysis that informs the requirements of the build
+5. Plan and use version control
+6. Website or app content gathering and creation
+7. Design of the interface (experiments - lots of experiments (font choices, colour choice, to create a style guide) layout structure, information architecture, )
+8. Design (calls to action identification - user stories, personas, customer story mapping, ( https://uxplanet.org/my-10-step-ux-ui-workflow-2019-74bb78723414 )
+9. Build of artefact (semantic HTML, CSS grid + sub-grid, dynamic data source (from cms you build, API or a structured JSON file).
+10. Technical Testing (TDD/BDD, user testing, expert testing, performance testing (chrome dev tools and lighthouse, accessibility testing)
+11. Post-build research to see if the site works for the purpose designed (not technicall but objectively (Does the site meet your aim and objectives?)
+12. Final analysis
+13. Write up (latex - using overleaf, refs in bib file from google scholar)
 
 
-<div class="text-block border-text-block">
-TOP TIP: The build should be much more than you have ever
-been asked to do or done in any other module.
+
+<div class="text-block border-text-block line-separate">
+
+## Top Tip
+#### The build should be much more than you have ever been asked to do or done in any other module.
 </div>
 
 
@@ -84,3 +72,5 @@ been asked to do or done in any other module.
 This is not part of either assignments but to help you find an project idea and a supervisor. Therefore this not assessed. 
 Please completed section 1 only of this form and submit it (MS Word) in the dropbox below by the 30th of October. 
 Supervision allocation will be confirmed on the 13th of November.
+
+<a href="">Download form</a>

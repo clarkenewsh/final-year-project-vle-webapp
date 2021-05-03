@@ -5,13 +5,6 @@ alt:  Tools & Software to help you succeed in your Undergraduate Projects
 author: Admin
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
 
     
 ## Image section
