@@ -1,16 +1,22 @@
+<!-- Blog layout to be initiliase on all blog related pages -->
 <template>
+  <!-- start of grid layout -->
   <div class="grid">
     <header>
+      <!-- Blog navigation component -->
       <BlogNav />
     </header>
     <main>
       <Nuxt />
+      <!-- nuxt content rendered here-->
     </main>
     <TheFooter />
   </div>
+  <!-- end of grid layout -->
 </template>
 
 <script>
+// Import components
 import BlogNav from '~/components/BlogNav.vue'
 import TheFooter from '~/components/TheFooter.vue'
 
@@ -23,6 +29,7 @@ export default {
 </script>
 
 <style>
+/* Universal css styles - blog layout  */
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -55,6 +62,16 @@ body {
   background: #1a202c;
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 9.4rem;
+}
+
 /* Mobile first css grid styles */
 .grid {
   display: grid;
@@ -76,22 +93,6 @@ footer {
   margin: 10px 20px;
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 3.8rem;
-}
-
-h1,
-h2,
-h3,
-h4 {
-}
-
-h2 {
-  font-weight: 500;
-  font-size: 9.4rem;
-}
-
 @media only screen and (min-width: 768px) {
   * {
     font-size: 20px;
@@ -108,6 +109,7 @@ h2 {
   }
 }
 
+/* Media Queries */
 @media only screen and (min-width: 1024px) {
   * {
     font-size: 22px;

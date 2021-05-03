@@ -1,16 +1,22 @@
+<!-- Blog layout to be initiliase on all blog related pages -->
 <template>
+  <!-- start of grid layout -->
   <div class="grid">
     <header>
+      <!-- Default navigation component -->
       <NavBar />
     </header>
     <main>
       <Nuxt />
+      <!-- nuxt content rendered here-->
     </main>
     <TheFooter />
   </div>
+  <!-- end of grid layout -->
 </template>
 
 <script>
+// Import components
 import NavBar from '~/components/NavBar.vue'
 import TheFooter from '~/components/TheFooter.vue'
 
@@ -23,6 +29,7 @@ export default {
 </script>
 
 <style>
+/* Universal css styles - default layout  */
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -77,17 +84,11 @@ h1 {
   font-size: 3.1rem;
 }
 
-h1,
-h2,
-h3,
-h4 {
-}
-
 h2 {
   font-weight: 500;
   font-size: 1.8rem;
 }
-
+/* Media Queries */
 @media only screen and (min-width: 768px) {
   * {
     font-size: 20px;
