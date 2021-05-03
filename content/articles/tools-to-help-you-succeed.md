@@ -5,20 +5,27 @@ alt:  Tools & Software to help you succeed in your Undergraduate Projects
 author: Admin
 ---
 
-## This is a heading
-Tools & Software to help you succeed in your Undergraduate Projects
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
 
-This is some more info
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
 
-### This is a sub heading
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
 
-This is some more infohkbjhbn
+    
+## Image section
 
-### This is another sub heading
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
 
-This is some more info
+### Top Tips
 
-## This is another heading
 
-This is some more info
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia.
+### Link to external resource and software
 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
