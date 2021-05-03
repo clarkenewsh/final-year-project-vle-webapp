@@ -92,10 +92,12 @@ export default {
   // Assign blog layout to blog home
   layout: 'default',
   data() {
+    // Assign page title
     return {
       title: 'Home Page',
     }
   },
+  // Return page title
   head() {
     return {
       title: this.title,

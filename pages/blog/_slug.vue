@@ -4,11 +4,12 @@
       <h1 class="article-title">{{ article.title }}</h1>
       <p class="article-description">{{ article.description }}</p>
       <p class="author">Author: {{ article.author }}</p>
+      <!-- Render formatted article slug date/time data -->
       <p class="updatedAt">
         Article last updated: {{ formatDate(article.updatedAt) }}
       </p>
     </div>
-    <!-- render the body copy blog content -->
+    <!-- display our content we are using the nuxt-content component by passing in the variable we returned into the document prop. -->
     <nuxt-content :document="article" class="article-body" />
   </article>
 </template>
@@ -17,6 +18,13 @@
 export default {
   // Assign blog layout to blog home page
   layout: 'blog',
+
+  /* Fetch our article content before the page has been rendered. Can have access to our content through the context by using the variable $content.
+      - fetch a dynamic page we also need to know which article to fetch with params.slug which is available to us through the context. 
+      - asyncData function we create a variable named article and fetch our content using the await followed by $content. 
+      - need to pass into $content what we want to fetch, which in our case is the article folder followed by the slug, get from our URL parameters. 
+      - hen chain the fetch method to the end and return the article which will contain the result of our fetch. */
+
   async asyncData({ $content, params }) {
     const article = await $content('articles', params.slug).fetch()
 
@@ -24,8 +32,8 @@ export default {
   },
 
   methods: {
+    // format this by creating a method that takes in a date and returns a new date with the options of year, month and day formatted to how we want
     formatDate(date) {
-      // format date method for date created, updated varibles for blog slug
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString('en', options)
     },
@@ -38,7 +46,6 @@ export default {
   margin-left: 10px;
 }
 .article-header {
-  /* background-color: #2d3748; */
   border-radius: 0.375rem;
   padding: 50px 20px;
   background-color: #2d3748;

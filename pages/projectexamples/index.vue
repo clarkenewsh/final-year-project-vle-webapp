@@ -22,6 +22,7 @@
         own ideas and worflows
       </p>
     </div>
+    <!-- Template to render project examples using a v-for to loop over all the project examples and print out the project title and author name, the description, the date it was updated and the image using the <NuxtLink> component to link to the slug of the project examples -->
     <ul>
       <li v-for="projectexample of projectexamples" :key="projectexample.slug">
         <NuxtLink
@@ -47,6 +48,11 @@
 export default {
   // Assign blog layout to blog home
   layout: 'default',
+
+  /* Passing in $content and params to the context in our asyncData function we then use a const of project examples to await our returned content by passing into $content the arguments of project examples, this the folder where our project examples are and our slug from params. 
+     We can then use only() to get our title, description, img, slug and author as we tested from our API this will give us exactly what we need. 
+     We can use sortBy() to sort by the createdAt date and then we chain our fetch() to the end and return our project examples. */
+
   async asyncData({ $content, params }) {
     const projectexamples = await $content('projectexamples')
       .only(['title', 'description', 'img', 'slug', 'author'])
@@ -58,11 +64,13 @@ export default {
     }
   },
   data() {
+    // Assign page title
     return {
       title: 'Project examples',
     }
   },
   head() {
+    // Return page title
     return {
       title: this.title,
     }
@@ -142,7 +150,7 @@ li:hover {
 span {
   font-size: 90%;
 }
-
+/* Media Queries */
 @media only screen and (min-width: 1024px) {
   ul {
     display: grid;

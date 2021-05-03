@@ -23,6 +23,7 @@
       </p>
     </div>
     <ul>
+      <!-- Template to render available projecst using a v-for to loop over all the available projects and print out the article title and author name, the description, the date it was updated and the image using the <NuxtLink> component to link to the slug of the project -->
       <li
         v-for="availableproject of availableprojects"
         :key="availableproject.slug"
@@ -33,7 +34,7 @@
             params: { slug: availableproject.slug },
           }"
         >
-          <img :src="availableproject.img" />
+          <!-- Render project slug data -->
           <div>
             <h2>{{ availableproject.title }}</h2>
             <p>{{ availableproject.description }}</p>
@@ -51,6 +52,11 @@
 export default {
   // Assign default layout to staff dashboard home
   layout: 'default',
+
+  /* Passing in $content and params to the context in our asyncData function we then use a const of available projects to await our returned content by passing into $content the arguments of available projects, this the folder where our available projects are and our slug from params. 
+     We can then use only() to get our title, description, slug and author as we tested from our API this will give us exactly what we need. 
+     We can use sortBy() to sort by the createdAt date and then we chain our fetch() to the end and return our available projects. */
+
   async asyncData({ $content, params }) {
     const availableprojects = await $content('availableprojects')
       .only(['title', 'description', 'img', 'slug', 'author'])
@@ -62,11 +68,13 @@ export default {
     }
   },
   data() {
+    // Return page title
     return {
       title: 'Available Projects',
     }
   },
   head() {
+    // Assign page title
     return {
       title: this.title,
     }
@@ -145,6 +153,7 @@ li:hover {
 span {
   font-size: 90%;
 }
+/* Media Queries */
 @media only screen and (min-width: 1024px) {
   ul {
     display: grid;

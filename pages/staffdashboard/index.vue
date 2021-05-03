@@ -34,10 +34,12 @@ export default {
   // Assign blog layout to blog home
   layout: 'default',
   data() {
+    // Assign page title
     return {
       title: 'Staff Login',
     }
   },
+  // Return page title
   head() {
     return {
       title: this.title,

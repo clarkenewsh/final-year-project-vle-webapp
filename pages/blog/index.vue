@@ -26,6 +26,7 @@
       </p>
     </div>
     <ul>
+      <!-- Template to render blog using a v-for to loop over all the articles and print out the article title and author name, the description, the date it was updated and the image using the <NuxtLink> component to link to the slug of the article -->
       <li v-for="article of articles" :key="article.slug">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
           <div>
@@ -43,6 +44,11 @@
 export default {
   // Assign blog layout to blog home
   layout: 'blog',
+
+  /* Passing in $content and params to the context in our asyncData function we then use a const of articles to await our returned content by passing into $content the arguments of articles, this the folder where our articlesare and our slug from params. 
+     We can then use only() to get our title, description, slug and author as we tested from our API this will give us exactly what we need. 
+     We can use sortBy() to sort by the createdAt date and then we chain our fetch() to the end and return our articles. */
+
   async asyncData({ $content, params }) {
     const articles = await $content('articles')
       .only(['title', 'description', 'img', 'slug', 'author'])
@@ -54,11 +60,13 @@ export default {
     }
   },
   data() {
+    // Assign page title
     return {
       title: 'Blog Home Page',
     }
   },
   head() {
+    // Return page title
     return {
       title: this.title,
     }
@@ -132,7 +140,7 @@ li:hover {
   color: #bdcc94;
   font-size: 80%;
 }
-
+/* Media Queries */
 @media only screen and (min-width: 1024px) {
   section {
     display: grid;
