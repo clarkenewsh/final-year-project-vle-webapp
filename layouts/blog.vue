@@ -69,7 +69,6 @@ h1 {
 
 h2 {
   font-weight: 500;
-  font-size: 9.4rem;
 }
 
 /* Mobile first css grid styles */
