@@ -51,7 +51,7 @@
         </svg>
         <h5 class="card-title">Student Dashboard</h5>
         <p class="card-text">
-          Student dashbaord to accees project examples &amp; available projects
+          Student dashboard to accees project examples &amp; available projects
           for the upcoming semester
         </p>
         <NuxtLink to="/studentdashboard" class="btn btn-primary">View</NuxtLink>
