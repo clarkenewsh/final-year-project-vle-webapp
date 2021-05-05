@@ -34,10 +34,4 @@ footer a {
   color: #e2e8f0;
 }
 
-@media only screen and (max-width: 1024px) {
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
-}
 </style>
