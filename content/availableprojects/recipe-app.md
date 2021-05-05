@@ -71,7 +71,7 @@ This is not part of either assignments but to help you find an project idea and 
 Please completed section 1 only of this form and submit it (MS Word) in the dropbox below by the 30th of October. 
 Supervision allocation will be confirmed on the 13th of November.
 
-<a href="">Download form</a>
+<a href="">Download supervisor agreemen form</a>
 
 
 
