@@ -26,10 +26,9 @@ If you allocate 8 hours to complete a task, it will take 8 hours, if you allocat
 Create a work space that works for you, find a good playlist that keeps your energy high, drink plenty of water in between the numerous coffees, and get plenty of sleep! Then encourage yourself with small rewards, celebrate the wins, fixing that bug, writing that paragraph. Manufacture a positive working culture for yourself, this will keep you motivated and sustains you all the way to the deadline!
 
 
-## Link to external resource and software
 
 
-<!-- <a href="https://nuxtjs.org">Linkt to project managemnt tool 1</a>
+## Links to additional resource and software 
+<a href="https://www.edgehill.ac.uk/ls/uni-skills/">Uni Skills learning materials</a>
 
-<a href="https://nuxtjs.org">Linkt to project managemnt tool 2</a> -->
-
+<a href="https://www.linkedin.com/learning/me?u=35744052">LinkedIn Learning Courses</a>

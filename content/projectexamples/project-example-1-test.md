@@ -1,6 +1,6 @@
 ---
-title: Project example 1 
-description: A test for a project example slug
+title: Project Example 1 
+description: Web Design & development Project Example
 alt: Project example 1 
 author: Tutor
 ---
@@ -21,28 +21,38 @@ site)
 ## Skills covered: Technical and non-technical
 
 #### Technical skills:
-
+<ul>
+<li>Software Modelling - UML</li>
+<li>Software Development Methodologies</li>
+<li>Data Analysis</li>
+<li>UX Design</li>
+<li>Protoptype Development</li>
+<li>Programming / coding</li>
+<li>Testing - TDD & BDD</li>
+</ul>
 
 #### Non-technical skills:
+<ul>
+<li>Time Managament</li>
+<li>Project Managment & Planning</li>
+<li>Ethical, socila and legal considerations</li>
+<li>Understanding project scope</li>
+<li>Project Meetings</li>
+<li>Communication</li>
+<li>Understanding Project Scope</li>
+</ul>
 
 ## Process and workflow
 
 1. Reserach and Planning
-2. Reserach and Planning
+2. Design
 3. Development
 4. Testing
 5. Deploy
 6. Monitor
 
-## Image examples of projects here
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia facere aliquid, natus eos vel? Repudiandae nesciunt temporibus cupiditate amet voluptatibus facere nemo officiis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo eaque atque, pariatur deserunt laborum, quia.
-
-## Top tips
 
 ## Links to additional learning 
-Links to learning and research papers here 
+<a href="https://www.edgehill.ac.uk/ls/uni-skills/">Uni Skills learning materials</a>
 
-
-
+<a href="https://www.linkedin.com/learning/me?u=35744052">LinkedIn Learning Courses</a>

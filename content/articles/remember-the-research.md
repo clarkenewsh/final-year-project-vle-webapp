@@ -31,9 +31,8 @@ This is where you see how key research before building truly is, because while y
 ### 5. Take Advantage of Available Resources
 This could be a mixture of external tools and software on the web or utilising your undergraduate peers to undertake your research. Remember when conducting research with peers to make sure to assess the legal, social and ethical considerations. 
 
-## Links to external resource and software
 
+## Links to additional resource and software 
+<a href="https://www.edgehill.ac.uk/ls/uni-skills/">Uni Skills learning materials</a>
 
-<a href="https://nuxtjs.org">Linkt to project managemnt tool 1</a>
-
-<a href="https://nuxtjs.org">Linkt to project managemnt tool 2</a>
+<a href="https://www.linkedin.com/learning/me?u=35744052">LinkedIn Learning Courses</a>
