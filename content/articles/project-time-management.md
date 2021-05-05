@@ -1,6 +1,6 @@
 ---
 title: Project Time Management
-description: Learn how to manage your time wisely. Apply project managment techniques a tools to help you manage time 
+description: Learn how to manage your time wisely. Apply project management techniques and tools to help you manage your time 
 alt: Project Time Management
 author: Admin
 ---

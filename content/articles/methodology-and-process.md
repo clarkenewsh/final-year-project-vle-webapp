@@ -1,6 +1,6 @@
 ---
 title: Methodology & process
-description: Learn how to apply the correct methodoldgy to your Undergraduate project work while following a structuted process. 
+description: Learn how to apply the correct methodolodgy to your Undergraduate project work while following a structured process. 
 alt: Methodology & process post
 author: Admin
 ---

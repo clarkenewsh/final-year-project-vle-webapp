@@ -1,6 +1,6 @@
 ---
 title: Remember the Research
-description: Learn how to think as a Compouter Scienetist and understabnd that Computer Science undergraduate projects are not all about the build and coding. 
+description: Learn how to think as a Computer Scientist and understand that Computer Science undergraduate projects are not all about the build and coding. 
 alt: Remember the Research
 author: Admin
 ---
