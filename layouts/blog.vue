@@ -64,7 +64,7 @@ body {
 
 h1 {
   font-weight: 700;
-  font-size: 3.8rem;
+  font-size: 2.8rem;
 }
 
 h2 {
